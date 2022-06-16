@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+header{
+/*
+	background-color: #bcd2fd
+*/
+}
+
+.logo{
+	height: 80px;
+	width: 150px;
+}
+@media only screen and ( min-width:1400px) and (max-width:2000px){
+	.nav-bar{
+	margin-left: 60vh;
+	}
+}
+@media only screen and ( min-width:1200px) and (max-width:1399px){
+	.nav-bar{
+	margin-left: 50vh;
+	}
+}
+@media only screen and ( min-width:990px) and (max-width:1199px){
+	.nav-bar{
+	margin-left: 30vh;
+	}
+}
+	
+/*@media only screen and ( min-width:300px) and (max-width:989px){
+	
+	.b-img{
+		display: none;
+	}
+}*/
+.nav-bar li a:hover{
+	color: rgba(255,255,255,1.00)
+}
+.nav-bar li .active{
+	color: #01569e !important
+}
+.nav-bar li .active:hover{
+	color: #FFFFFF !important
+}
+.nav-bar li a{
+	color: #01569e;
+}
+.nav-item:hover{
+	background-color:#081972 !important;
+}
+.navbar button{
+	color: #081972;
+	background-color: #01569e
+}
+.about {
+	border-bottom: 2px solid #081972;
+	color: #081972;
+}
+.about .container h1{
+	color: #01569e;
+}
+/*This css is for banner*/
+
+.bannan{
+	background-color: #01569e; 
+}
+.font{
+	font-family: 'Open Sans', sans-serif;
+}
+.b-handing{
+	font-size: 65px;
+	padding-top: 2em;
+}
+.b-img{
+	padding-top: 3em;
+}
+.b-img img{
+	border-radius:35px 10px 35px 10px;
+	height: 400px;
+}
+
+/*This css is for Service*/
+.services{
+	background-color:#01569e 
+}
+.s-1 img{
+	height: 300px;
+}
+.s-1{
+	background-color: rgba(255,255,255,1.00);
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;	
+	height: 450px;
+	color: #081972
+}
+
+.s-text{
+	position: absolute;
+	top: 17px;
+	left: 30px;
+	right: 30px;
+	opacity: 0;
+}
+.s-1:hover .s-text{
+	opacity: 1;
+}
+.s-1:hover .s-hover{
+	transition: 1s ease;
+	opacity: 0.1;
+}
+footer{
+	background-color: #EAF4F6;
+	color: #081972;
+}
+footer .container i{
+	color: #081972;
+}
+footer .container img{
+	height: 150px;
+	width: 200px;
+	
+}
