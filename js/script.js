@@ -22,23 +22,29 @@ btns.forEach((btn,i)=>{
     })
 });
 
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop:true,
+new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
     autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
     },
     breakpoints: {
-        640: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-    },
-});
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
 

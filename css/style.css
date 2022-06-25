@@ -12,6 +12,13 @@
     --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
     
 }
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
 
 body {
     font-family: "Barlow", sans-serif;
@@ -611,121 +618,72 @@ text-align: center;}
 }
 
 
-.team-9 {
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
 
-.team-9:hover {
-    transform: rotateY(180deg);
+/* # Testimonials */
+--------------------------------------------------------------*/
+.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+  overflow: hidden;
 }
-
-.team-9 .team-img {
-    position: relative;
-    font-size: 0;
-    text-align: center;
-    margin-bottom: 30px;
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 30px 15px;
+  min-height: 300px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
 }
-
-.team-9 .team-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 100%;
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 10px;
+  border: 6px solid #fff;
+  float: left;
+  margin: 0 10px 0 0;
 }
-
-.team-9 .team-content {
-    text-align: center;
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 25px 0 5px 0;
+  color: #111;
 }
-
-.team-9 .team-content h2 {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
 }
-
-.team-9 .team-content h3 {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 0;
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+  color: #fceaea;
+  font-size: 26px;
 }
-
-.team-9 .team-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background: #ffffff;
-    border-radius: 5px;
-    transform: rotateY(180deg);
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
 }
-
-.team-9 .team-overlay p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: center;
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
 }
-
-.team-9 .team-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0;
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 30px auto 15px auto;
 }
-
-.team-9 .team-social a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    padding: 11px 0 10px 0;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    color: #ffffff;
-    border-radius: 100%;
-    transition: all .3s;
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
 }
-
-.team-9 .team-social a.social-tw {
-    background: #00acee;
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #e03a3c;
 }
-
-.team-9 .team-social a.social-fb {
-    background: #3b5998;
-}
-
-.team-9 .team-social a.social-li {
-    background: #0e76a8;
-}
-
-.team-9 .team-social a.social-in {
-    background: #3f729b;
-}
-
-.team-9 .team-social a.social-yt {
-    background: #c4302b;
-}
-
-.team-9 .team-social a:last-child {
-    margin-right: 0;
-}
-
-.team-9 .team-social a:hover {
-    background: #222222;
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #e03a3c;
 }
 
 
@@ -760,44 +718,6 @@ text-align: center;}
     text-transform: uppercase;
     color: var(--brand);
     text-decoration: underline;
-}
-.review {
-    padding-top:0;
-}
-.review .review-slider{
-    padding-bottom: 2rem;
-}
-  
-.review .box{
-    padding:2rem;
-    text-align: center;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-}
-  
-.review .box img{
-    height:13rem;
-    width:13rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-  
-.review .box h3{
-    color:#333;
-    font-size: 22px;
-}
-  
-.review .box p{
-    color:#666;
-    font-size: 14px;
-    font-weight: 400;
-    padding:1rem 0;
-}
-  
-.review .box .stars i{
-    color:var(--orange);
-    font-size: 1.7rem;
 }
   
 .owl-theme .owl-controls{
