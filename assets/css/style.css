@@ -13,6 +13,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 body {
   font-family: "Barlow", sans-serif;
   color: #444444;
@@ -229,6 +235,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
+
+/* Banner Video */
+
 
 /*--------------------------------------------------------------
 # Hero Section
