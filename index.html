@@ -25,6 +25,10 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Animate CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
@@ -43,7 +47,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#team">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#course">Blog</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -53,23 +57,40 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- End Banner -->
+  <!-- ======= Banner Section ======= -->
+  <section class="hero">
+  <video autoplay loop muted><source src="assets/img/banner/video_1.mp4" type="video/mp4"></video>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <div class="row">
-        <div class="col-xl-6">
-          <h1>Embrace the Power of Data Driven Decisions</h1>
-          <h2>Your roadmap to Success</h2>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        </div>
-      </div>
-    </div>
-
+	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+		<div class="carousel-indicators">
+			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="carousel-caption">
+					<h5 class="animated fadeInDown" style="animation-delay: 1s">Insight through innovation</h5>
+					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">With machine learning, you can let the algorithm learn and then make predictions to find patterns from historical data.</p>
+					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-caption">
+					<h5 class="animated fadeInDown" style="animation-delay: 1s">Let's uncover the story</h5>
+					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">At the intersection of machine learning, data science and software development, we solve your business problems fast. </p>
+					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="carousel-caption">
+					<h5 class="animated fadeInDown" style="animation-delay: 1s">Your roadmap to success</h5>
+					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Our team of professionals has years of experience in the field, helping many companies reduce costs and improve service.</p>
+					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
+				</div>
+			</div>
+		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+	</div>
   </section>
-  <!-- End Hero -->
+  <!-- ======= Banner Section Ends ======= -->
 
   <main id="main">
 
@@ -341,6 +362,73 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+    <!-- ======= Course Section ======= -->
+    <section id="course" class="pricing section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Courses</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box" data-aos="fade-up" data-aos-delay="100">
+              <h3>Free</h3>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
+              <h3>Business</h3>
+              <h4><sup>$</sup>19<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <h3>Developer</h3>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Course Section -->
+
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
@@ -433,6 +521,7 @@
 
       </div>
     </section><!-- End Testimonials Section -->
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
