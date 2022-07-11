@@ -237,74 +237,81 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Banner Video */
-
-
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
+.hero {
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: 82px;
 }
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0;
+	transform: translateX(-50%) translateY(-50%);
 }
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  color: #fff;
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
 }
-#hero h2 {
-  color: #fff;
-  margin: 10px 0 0 0;
-  font-size: 24px;
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
 }
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 30px;
-  border-radius: 4px;
-  transition: 0.5s;
-  margin-top: 30px;
-  color: #fff;
-  background: var(--primary);;
-  border: 2px solid var(--brand);
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 35px;
 }
-#hero .btn-get-started:hover {
-  background: transparent;
-  border-color: #fff;
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 22px;
+	line-height: 1.8;
 }
-@media (max-width: 768px) {
-  #hero {
-    text-align: center;
-    padding-top: 58px;
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #1977cc;
+	padding: 5px 20px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+@media only screen and (max-width: 767px) {
+	/* .navbar-nav {
+		text-align: center
+	} */
+  .hero {
+    padding-top: 200px;
   }
-  #hero h1 {
-    font-size: 28px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-@media (max-height: 500px) {
-  #hero {
-    height: 120vh;
-  }
+	.carousel-caption {
+		bottom: 165px
+	}
+	.carousel-caption h5 {
+    padding-top: 100px;
+		font-size: 16px
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 14px
+	}
+	.navbar .appbtn {
+		display: none;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -649,6 +656,81 @@ section {
 }
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+/*--------------------------------------------------------------
+# Course
+--------------------------------------------------------------*/
+.pricing .box {
+  padding: 20px;
+  background: #2b2b2b;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.pricing .box h3 {
+  font-weight: 400;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.pricing .box h4 {
+  font-size: 42px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+.pricing .box h4 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+.pricing .box h4 span {
+  font-size: 16px;
+  font-weight: 300;
+}
+.pricing .box ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+.pricing .box ul li {
+  padding-bottom: 16px;
+}
+.pricing .box ul i {
+  color: var(--primary);
+  font-size: 18px;
+  padding-right: 4px;
+}
+.pricing .box ul .na {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: line-through;
+}
+.pricing .box .btn-wrap {
+  padding: 15px;
+  text-align: center;
+}
+.pricing .box .btn-buy {
+  display: inline-block;
+  padding: 10px 40px 12px 40px;
+  border-radius: 4px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.pricing .box .btn-buy:hover {
+  border-color: #fff;
+}
+.pricing .featured {
+  /* background: var(--primary); */
 }
 
 /*--------------------------------------------------------------
