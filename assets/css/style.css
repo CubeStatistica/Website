@@ -371,10 +371,10 @@ section {
 .breadcrumbs {
   padding: 15px 0;
   background: #2b2b2b;
-  min-height: 40px;
+  min-height: 100%;
   margin-top: 82px;
   color: #fff;
-}
+  }
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 500;
@@ -675,7 +675,7 @@ section {
   text-transform: uppercase;
   font-weight: 600;
 }
-.pricing .box h4 {
+.pricing .box h1 {
   font-size: 42px;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
@@ -988,12 +988,80 @@ section {
     transform: rotate(360deg);
   }
 }
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/blog/page-title.jpg") top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 82px;
+}
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero h1 {
+  margin-top: 10;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+}
+#hero h2 {
+  color: #fff;
+  margin: 10px 0 0 0;
+  font-size: 18px;
+}
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: var(--primary);
+  border: 2px solid var(--primary);
+}
+#hero .btn-get-started:hover {
+  background: transparent;
+  border-color: #fff;
+}
+@media (max-width: 768px) {
+  #hero {
+    text-align: center;
+    padding-top: 58px;
+  }
+  #hero h1 {
+    font-size: 28px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
 .blog {
-  padding: 40px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 .blog .entry {
   padding: 30px;
@@ -1002,14 +1070,14 @@ section {
 }
 .blog .entry .entry-img {
   max-height: 440px;
-  margin: -30px -30px 20px -30px;
+  margin: -30px -40px 20px -30px;
   overflow: hidden;
 }
 .blog .entry .entry-title {
   font-size: 28px;
   font-weight: bold;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 10 0 20px 0;
 }
 .blog .entry .entry-title a {
   color: #111111;
@@ -1169,242 +1237,55 @@ section {
   font-style: italic;
   color: #b7b7b7;
 }
-.blog .blog-comments {
-  margin-bottom: 30px;
-}
-.blog .blog-comments .comments-count {
-  font-weight: bold;
-}
-.blog .blog-comments .comment {
-  margin-top: 30px;
-  position: relative;
-}
-.blog .blog-comments .comment .comment-img {
-  margin-right: 14px;
-}
-.blog .blog-comments .comment .comment-img img {
-  width: 60px;
-}
-.blog .blog-comments .comment h5 {
-  font-size: 16px;
-  margin-bottom: 2px;
-}
-.blog .blog-comments .comment h5 a {
-  font-weight: bold;
-  color: #444444;
-  transition: 0.3s;
-}
-.blog .blog-comments .comment h5 a:hover {
-  color: #e03a3c;
-}
-.blog .blog-comments .comment h5 .reply {
-  padding-left: 10px;
-  color: #111111;
-}
-.blog .blog-comments .comment h5 .reply i {
-  font-size: 20px;
-}
-.blog .blog-comments .comment time {
-  display: block;
-  font-size: 14px;
-  color: #2b2b2b;
-  margin-bottom: 5px;
-}
-.blog .blog-comments .comment.comment-reply {
-  padding-left: 40px;
-}
-.blog .blog-comments .reply-form {
-  margin-top: 30px;
-  padding: 30px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-.blog .blog-comments .reply-form h4 {
-  font-weight: bold;
-  font-size: 22px;
-}
-.blog .blog-comments .reply-form p {
-  font-size: 14px;
-}
-.blog .blog-comments .reply-form input {
-  border-radius: 4px;
-  padding: 10px 10px;
-  font-size: 14px;
-}
-.blog .blog-comments .reply-form input:focus {
-  box-shadow: none;
-  border-color: #ee9293;
-}
-.blog .blog-comments .reply-form textarea {
-  border-radius: 4px;
-  padding: 10px 10px;
-  font-size: 14px;
-}
-.blog .blog-comments .reply-form textarea:focus {
-  box-shadow: none;
-  border-color: #ee9293;
-}
-.blog .blog-comments .reply-form .form-group {
-  margin-bottom: 25px;
-}
-.blog .blog-comments .reply-form .btn-primary {
-  border-radius: 4px;
-  padding: 10px 20px;
-  border: 0;
-  background-color: #111111;
-}
-.blog .blog-comments .reply-form .btn-primary:hover {
-  background-color: #1e1e1e;
-}
-.blog .blog-pagination {
-  color: #444444;
-}
-.blog .blog-pagination ul {
-  display: flex;
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq .faq-list {
   padding: 0;
-  margin: 0;
   list-style: none;
 }
-.blog .blog-pagination li {
-  margin: 0 5px;
-  transition: 0.3s;
+.faq .faq-list li {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
-.blog .blog-pagination li a {
-  color: #111111;
-  padding: 7px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.blog .blog-pagination li.active, .blog .blog-pagination li:hover {
-  background: #e03a3c;
-}
-.blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
-  color: #fff;
-}
-.blog .sidebar {
-  padding: 30px;
-  margin: 0 0 60px 20px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-.blog .sidebar .sidebar-title {
-  font-size: 20px;
-  font-weight: 700;
-  padding: 0 0 0 0;
-  margin: 0 0 15px 0;
-  color: #111111;
+.faq .faq-list a {
+  display: block;
   position: relative;
+  font-family: var(--primary);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-right: 25px;
+  cursor: pointer;
 }
-.blog .sidebar .sidebar-item {
-  margin-bottom: 30px;
-}
-.blog .sidebar .search-form form {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 3px 10px;
-  position: relative;
-}
-.blog .sidebar .search-form form input[type=text] {
-  border: 0;
-  padding: 4px;
-  border-radius: 4px;
-  width: calc(100% - 40px);
-}
-.blog .sidebar .search-form form button {
+.faq .faq-list i {
+  font-size: 24px;
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 15px;
-  margin: -1px;
-  background: #e03a3c;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-  line-height: 0;
+  top: 0;
 }
-.blog .sidebar .search-form form button i {
-  line-height: 0;
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
 }
-.blog .sidebar .search-form form button:hover {
-  background: #e34c4d;
+.faq .faq-list .icon-show {
+  display: none;
 }
-.blog .sidebar .categories ul {
-  list-style: none;
-  padding: 0;
+.faq .faq-list a.collapsed {
+  color: #343a40;
 }
-.blog .sidebar .categories ul li + li {
-  padding-top: 10px;
+.faq .faq-list a.collapsed:hover {
+  color: var(--brand);
 }
-.blog .sidebar .categories ul a {
-  color: #111111;
-  transition: 0.3s;
-}
-.blog .sidebar .categories ul a:hover {
-  color: #e03a3c;
-}
-.blog .sidebar .categories ul a span {
-  padding-left: 5px;
-  color: #aaaaaa;
-  font-size: 14px;
-}
-.blog .sidebar .recent-posts .post-item + .post-item {
-  margin-top: 15px;
-}
-.blog .sidebar .recent-posts img {
-  width: 80px;
-  float: left;
-}
-.blog .sidebar .recent-posts h4 {
-  font-size: 15px;
-  margin-left: 95px;
-  font-weight: bold;
-}
-.blog .sidebar .recent-posts h4 a {
-  color: #111111;
-  transition: 0.3s;
-}
-.blog .sidebar .recent-posts h4 a:hover {
-  color: #e03a3c;
-}
-.blog .sidebar .recent-posts time {
-  display: block;
-  margin-left: 95px;
-  font-style: italic;
-  font-size: 14px;
-  color: #aaaaaa;
-}
-.blog .sidebar .tags {
-  margin-bottom: -10px;
-}
-.blog .sidebar .tags ul {
-  list-style: none;
-  padding: 0;
-}
-.blog .sidebar .tags ul li {
+.faq .faq-list a.collapsed .icon-show {
   display: inline-block;
 }
-.blog .sidebar .tags ul a {
-  color: #515151;
-  font-size: 14px;
-  padding: 6px 14px;
-  margin: 0 6px 8px 0;
-  border: 1px solid #c4c4c4;
-  display: inline-block;
-  transition: 0.3s;
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
 }
-.blog .sidebar .tags ul a:hover {
-  color: #fff;
-  border: 1px solid #e03a3c;
-  background: #e03a3c;
-}
-.blog .sidebar .tags ul a span {
-  padding-left: 5px;
-  color: #aaaaaa;
-  font-size: 14px;
-}
+
 
 /*--------------------------------------------------------------
 # Footer
