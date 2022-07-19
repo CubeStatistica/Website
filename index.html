@@ -24,6 +24,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Animate CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +40,7 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <h1 class="logo me-auto"><a href="index.html">Cube Statistica</a></h1>
-
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/cubelogo.png" alt=""></a> -->
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -51,45 +52,71 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- .navbar -->
 
       <a href="#about" class="get-started-btn scrollto">Get Started</a>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Banner Section ======= -->
-  <section class="hero">
-  <video autoplay loop muted><source src="assets/img/banner/video_1.mp4" type="video/mp4"></video>
 
-	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
-		<div class="carousel-indicators">
-			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="carousel-caption">
-					<h5 class="animated fadeInDown" style="animation-delay: 1s">Insight through innovation</h5>
-					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">With machine learning, you can let the algorithm learn and then make predictions to find patterns from historical data.</p>
-					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption">
-					<h5 class="animated fadeInDown" style="animation-delay: 1s">Let's uncover the story</h5>
-					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">At the intersection of machine learning, data science and software development, we solve your business problems fast. </p>
-					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption">
-					<h5 class="animated fadeInDown" style="animation-delay: 1s">Your roadmap to success</h5>
-					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Our team of professionals has years of experience in the field, helping many companies reduce costs and improve service.</p>
-					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
-				</div>
-			</div>
-		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
-	</div>
-  </section>
+  <section class="home">
+    <video src="assets/img/banner/video_1.mp4" muted autoplay loop class="video-slider active"></video>
+    <video src="assets/img/banner/video_1.mp4" muted autoplay loop class="video-slider"></video>
+    <video src="assets/img/banner/video_1.mp4" muted autoplay loop class="video-slider"></video>
+    <video src="assets/img/banner/video_1.mp4" muted autoplay loop class="video-slider"></video>
+    <div class="content active">
+        <div class="row">
+            <div class="col-12 text-right text-white">
+                <h5 class="text-white text-uppercase">design Driven for professional</h5>
+                <h1 class="display-3 my-4">Embrace the power of data driven decisions.<br /></h1>
+                <a href="#" class="btn btn-brand">Get Started</a>
+                <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-12 text-right text-white">
+                <h5 class="text-white text-uppercase">Data is the new gold</h5>
+                <h1 class="display-3 my-4">The Art of Learning from Data.<br /></h1>
+                <a href="#" class="btn btn-brand">Get Started</a>
+                <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-12 text-right text-white">
+                <h5 class="text-white text-uppercase">Let's uncover the story</h5>
+                <h1 class="display-3 my-4">Get the insights to make better decisions.<br /></h1>
+                <a href="#" class="btn btn-brand">Get Started</a>
+                <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="content">
+        <div class="row">
+            <div class="col-12 text-right text-white">
+                <h5 class="text-white text-uppercase">Your roadmap to success</h5>
+                <h1 class="display-3 my-4">Faster data annotation with advanced tools<br /></h1>
+                <a href="#" class="btn btn-brand">Get Started</a>
+                <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="slider-navigation">
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+</section>
   <!-- ======= Banner Section Ends ======= -->
 
   <main id="main">
@@ -376,164 +403,99 @@
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/team/Faizan Khalid.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Faizan Khalid Mohsin</h4>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/yameen.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Saad Mohsin</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/team/javera.jpeg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Javaria Qayyum</h4>
-                <span>CTO</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/suneeta.jpeg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Suneeta Devi</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/yameen.png" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Yiming Zhong</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/urroj.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Urooj Badi-uz-zaman</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/suneeta.jpeg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Suneeta Devi</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/suneeta.jpeg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>SUneeta Devi</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+    <section id="team" class="section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Team</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
       </div>
-    </section><!-- End Team Section -->
+      <div class="row">
+          <div class="column">
+              <div class="team-9">
+                  <div class="team-img">
+                      <img src="assets/img/team/suneeta.jpeg" alt="Team Image">
+                  </div>
+                  <div class="team-content">
+                      <h2>Suneeta Devi</h2>
+                      <h3>Web Developer</h3>
+                  </div>
+                  <div class="team-overlay">
+                      <p>Some text goes here that describes about team member</p>
+                      <div class="team-social">
+                          <a class="social-tw" href=""><i class="bx bxl-twitter"></i></a>
+                          <a class="social-fb" href=""><i class="bx bxl-facebook"></i></a>
+                          <a class="social-li" href=""><i class="bx bxl-linkedin"></i></a>
+                          <a class="social-in" href=""><i class="bx bxl-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="column">
+            <div class="team-9">
+                <div class="team-img">
+                    <img src="assets/img/team/javera.jpeg" alt="Team Image">
+                </div>
+                <div class="team-content">
+                    <h2>Javaria Qayyum</h2>
+                    <h3>Junior data scientist</h3>
+                </div>
+                <div class="team-overlay">
+                    <p>Some text goes here that describes about team member</p>
+                    <div class="team-social">
+                      <a class="social-tw" href=""><i class="bx bxl-twitter"></i></a>
+                      <a class="social-fb" href=""><i class="bx bxl-facebook"></i></a>
+                      <a class="social-li" href=""><i class="bx bxl-linkedin"></i></a>
+                      <a class="social-in" href=""><i class="bx bxl-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div class="column">
+              <div class="team-9">
+                  <div class="team-img">
+                      <img src="assets/img/team/yameen.png" alt="Team Image">
+                  </div>
+                  <div class="team-content">
+                      <h2>Yiming Zhong</h2>
+                      <h3>Intern</h3>
+                  </div>
+                  <div class="team-overlay">
+                      <p>Some text goes here that describes about team member</p>
+                      <div class="team-social">
+                        <a class="social-tw" href=""><i class="bx bxl-twitter"></i></a>
+                        <a class="social-fb" href=""><i class="bx bxl-facebook"></i></a>
+                        <a class="social-li" href=""><i class="bx bxl-linkedin"></i></a>
+                        <a class="social-in" href=""><i class="bx bxl-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+       
+          <div class="column">
+              <div class="team-9">
+                  <div class="team-img">
+                      <img src="assets/img/team/urroj.jpg" alt="Team Image">
+                  </div>
+                  <div class="team-content">
+                      <h2 style="font-size: 16px;">Urooj Badi-uz-zaman</h2>
+                      <h3>Intern</h3>
+                  </div>
+                  <div class="team-overlay">
+                      <p>Some text goes here that describes about team member</p>
+                      <div class="team-social">
+                        <a class="social-tw" href=""><i class="bx bxl-twitter"></i></a>
+                        <a class="social-fb" href=""><i class="bx bxl-facebook"></i></a>
+                        <a class="social-li" href=""><i class="bx bxl-linkedin"></i></a>
+                        <a class="social-in" href=""><i class="bx bxl-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> 
+  </div>
+</section>
+  
+    <!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -688,6 +650,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/video.js"></script>
 
 </body>
 
