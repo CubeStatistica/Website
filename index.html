@@ -24,6 +24,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Animate CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,45 +52,71 @@
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- .navbar -->
 
       <a href="#about" class="get-started-btn scrollto">Get Started</a>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Banner Section ======= -->
-  <section class="hero">
-  <video autoplay loop muted><source src="assets/img/banner/video_1.mp4" type="video/mp4"></video>
 
-	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
-		<div class="carousel-indicators">
-			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="carousel-caption">
-					<h5 class="animated fadeInDown" style="animation-delay: 1s">Insight through innovation</h5>
-					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">With machine learning, you can let the algorithm learn and then make predictions to find patterns from historical data.</p>
-					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption">
-					<h5 class="animated fadeInDown" style="animation-delay: 1s">Let's uncover the story</h5>
-					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">At the intersection of machine learning, data science and software development, we solve your business problems fast. </p>
-					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="carousel-caption">
-					<h5 class="animated fadeInDown" style="animation-delay: 1s">Your roadmap to success</h5>
-					<p class="animated fadeInUp d-none d-md-block" style="animation-delay: 2s">Our team of professionals has years of experience in the field, helping many companies reduce costs and improve service.</p>
-					<p class="animated fadeInUp" style="animation-delay: 3s"><a href="#">Get Started</a></p>
-				</div>
-			</div>
-		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
-	</div>
-  </section>
+  <section class="home">
+    <video src="assets/img/banner/video_1.mp4" muted autoplay loop class="video-slider active"></video>
+    <video src="assets/img/banner/video_1.mp4" muted autoplay loop class="video-slider"></video>
+    <video src="assets/img/banner/video_1.mp4" muted autoplay loop class="video-slider"></video>
+    <video src="assets/img/banner/video_1.mp4" muted autoplay loop class="video-slider"></video>
+    <div class="content active">
+        <div class="row">
+            <div class="col-12 text-right text-white">
+                <h5 class="text-white text-uppercase">design Driven for professional</h5>
+                <h1 class="display-3 my-4">Embrace the power of data driven decisions.<br /></h1>
+                <a href="#" class="btn btn-brand">Get Started</a>
+                <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-12 text-right text-white">
+                <h5 class="text-white text-uppercase">Data is the new gold</h5>
+                <h1 class="display-3 my-4">The Art of Learning from Data.<br /></h1>
+                <a href="#" class="btn btn-brand">Get Started</a>
+                <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
+            <div class="col-12 text-right text-white">
+                <h5 class="text-white text-uppercase">Let's uncover the story</h5>
+                <h1 class="display-3 my-4">Get the insights to make better decisions.<br /></h1>
+                <a href="#" class="btn btn-brand">Get Started</a>
+                <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="content">
+        <div class="row">
+            <div class="col-12 text-right text-white">
+                <h5 class="text-white text-uppercase">Your roadmap to success</h5>
+                <h1 class="display-3 my-4">Faster data annotation with advanced tools<br /></h1>
+                <a href="#" class="btn btn-brand">Get Started</a>
+                <a href="#" class="btn btn-outline-light ms-3">Our work</a>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="slider-navigation">
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+</section>
   <!-- ======= Banner Section Ends ======= -->
 
   <main id="main">
@@ -623,6 +650,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/video.js"></script>
 
 </body>
 
