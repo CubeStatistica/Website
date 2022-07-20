@@ -959,11 +959,9 @@ section {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-
 .team-9:hover {
   transform: rotateY(180deg);
 }
-
 .team-9 .team-img {
   position: relative;
   font-size: 0;
