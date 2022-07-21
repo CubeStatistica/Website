@@ -382,9 +382,6 @@ h1, h2, h3, h4, h5, h6 {
   .home .media-icons{
     right: 15px;
   }
-  header .navigation{
-    display: none;
-  }
 }
 /*--------------------------------------------------------------
 # Sections General
@@ -959,9 +956,11 @@ section {
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
+
 .team-9:hover {
   transform: rotateY(180deg);
 }
+
 .team-9 .team-img {
   position: relative;
   font-size: 0;
@@ -1462,7 +1461,7 @@ section {
 }
 .faq .faq-list p {
   margin-bottom: 0;
-  padding: 10px 0 0 0;
+  padding: 10px 10px 10px 10px;
 }
 .faq .faq-list .icon-show {
   display: none;
