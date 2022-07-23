@@ -27,6 +27,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -35,23 +40,25 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
       <h1 class="logo me-auto"><a href="index.html">Cube Statistica</a></h1>
-
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/cubelogo.png" alt=""></a> -->
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto active" href="#course">Courses</a></li>
+          <li><a class="nav-link scrollto" href="course.html">Course</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- .navbar -->
 
       <a href="#about" class="get-started-btn scrollto">Get Started</a>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
   <main id="main">
 
@@ -77,7 +84,7 @@
 
         <div class="row">
 
-          <div class="col-lg-15 entries">
+          <div class="col-lg-9 entries">
 
             <article class="entry entry-single">
 
@@ -87,9 +94,9 @@
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-book"></i> <a href="blog-single.html">06 Months</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">03 Hours</time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-wallet"></i> <a href="blog-single.html">$699</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-book"></i> <a href="blog-single.html">05 Weeks</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">02 Hours</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-wallet"></i> <a href="blog-single.html">PKR 10,000</a></li>
                 </ul>
               </div>
 
@@ -155,7 +162,141 @@
               </div>
 
             </article><!-- End blog entry -->
+            <section style="padding-top:0;">
+              <div class="container" data-aos="fade-up">
+                <h2><span class="letter">C</span>ourse <span class="letter">C</span>ontent</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-15">
+                         <div id="accordion">
+                             <div class="card">
+                               <div class="card-header" id="headingOne">
+                                 <h5 class="mb-0">
+                                   <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                     Week 1  </br>
+                                     <span class="goal"> Introduction to Software Stack & Purpose of the Course. </span>
+                                   </button>
+                                 </h5>
+                                 
+                               </div>
+                           
+                               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                 <div class="card-body">
+                                     <h6>We help everyone make a GitHub, Slack account.</h6>
+                                     <li>Installing R</li>
+                                     <li>Github Introduction</li>
+                                     <li>Jira and Github Projects</li>
+                                     <li>Folder Structuring</li>
+                                     <li>Scrum</li>
+                                     <li>Dashboard knowledge</li>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="card">
+                               <div class="card-header" id="headingTwo">
+                                 <h5 class="mb-0">
+                                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                     Week 2 </br>
+                                     <span class="goal"> Introduction to Tidyverse Package </span>
+                                   </button>
+                                 </h5>
+                               </div>
+                               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                 <div class="card-body">
+                                     <h6> Present sample dashboard to class to set their goal for what they should achieve or exceed</h6>
+                                     <li>Basic R commands</li>
+                                     <li>R Mardown (+some script)</li>
+                                     <li>Flexdashboard in Action</li>
+                                     <li>Creating & Deploying Dashboards</li>
+                                     <li>Very Basic Custom Stylizing Using css</li>
+                                     <li>Getting and Cleaning Data.</li>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="card">
+                               <div class="card-header" id="headingThree">
+                                 <h5 class="mb-0">
+                                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                     Week 3 </br>
+                                     <span class="goal"> Exploratory Data Analysis. </span>
+                                   </button>
+                                 </h5>
+                               </div>
+                               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                 <div class="card-body">
+                                     <h6>Detailed Getting and Cleaning Data</h6>
+                                     <li>Dealing with Missing Values.</li>
+                                     <li>Outlier Detection.</li>
+                                     <li>GGplot Visualizations.</li>
+                                     <li>Manipulating & Grouping</li>
+                                     <li>Cleaning Data in R</li>
+                                 </div>
+                               </div>
+                             </div>
+                             <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    Week 4 </br>
+                                    <span class="goal">Basic Machine Learning Concepts & Application </span>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <h6>Visualizing and summarizing results</h6>
+                                    <li>Train Model.</li>
+                                    <li>Valid Test concepts.</li>
+                                    <li>Data Science Pipeline.</li>
+                                    <li>Application in dashboard.</li>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    Week 5 </br>
+                                    <span class="goal"> Dashboard in Action Part 1. </span>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <h6>Teaching more advanced App and Dashboard skills and features</h6>
+                                    <li>Shiny Modules.</li>
+                                    <li>Custom Stylizing using css.</li>
+                                    <li>Git Bash.</li>
+                                    <li>Git Pull Request.</li>
+                                    <li>Command Line.</li>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                    Week 6 </br>
+                                    <span class="goal"> Dashboard in Action Part 2. </span>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <h6>Teaching more advanced App and Dashboard skills and features </h6>
+                                    <li>More Custom Stylizing using css.</li>
+                             
+                                </div>
+                              </div>
+                            </div>
+                           </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                </section>
 
+                <h3>About Instructor</h3>
             <div class="blog-author d-flex align-items-center">
               <img src="assets/img/team/Faizan Khalid.jpg" class="rounded-circle float-left" alt="">
               <div>
@@ -178,74 +319,7 @@
 
       </div>
             
-        <section id="faq" class="faq">
-          <div class="container" data-aos="fade-up">
-    
-            <div class="section-title">
-              <h2>Course Content</h2>
-            </div>
-    
-            <ul class="faq-list accordion" data-aos="fade-up">
-    
-              <li>
-                <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Week 1: Introduction to Software Stack & Purpose of the Course. <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-                <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                  <p class="mb-3"><i class="bi bi-asterisk text-primary me-3"></i>Professionals working in the industry looking to switch to Data Science or learn the best practices for Machine Learning.</p>
-                     Installing R, Jira/GitHub Projects, Folder Structuring, GitHub Introduction, Scrum & Dashboard knowledge - We help everyone make a GitHub, Slack account.
-                  </p>
-                </div>
-              </li>
-    
-              <li>
-                <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">Week_2 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-                <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    R Nuts & Bolts (Basic R commands, R Markdown (+ some script), Introduction to Tidy verse Package, Getting and Cleaning Data) & Flex dashboard in Action (Creating & Deploying Dashboards, very basic custom stylizing using CSS). Present sample dashboard to class to set their goal for what they should achieve or exceed).
-                  </p>
-                </div>
-              </li>
-    
-              <li>
-                <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">Week_3 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-                <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Exploratory Data Analysis (Dealing with Missing Values, Outlier Detection, ggplot Visualizations) Detailed Getting and Cleaning Data (Manipulating, Grouping and Cleaning Data in R) + Application of this in dashboard.
-                  </p>
-                </div>
-              </li>
-    
-              <li>
-                <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">Week_4 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-                <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Basic Machine Learning Concepts & Intro to R shiny (Train, Valid, Test concepts, data science pipeline + Visualizing and summarizing results) + Application of this in dashboard.
-                  </p>
-                </div>
-              </li>
-    
-              <li>
-                <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">Week_5 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-                <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Dashboard in Action Part 1- Teaching more advanced App and Dashboard skills and features (shiny modules, custom stylizing using CSS) + Time for students to work on their dashboard. Making sure they have the workflow done for software development (Git bash, GitHub, Pull Request, Command Line).
-                  </p>
-                </div>
-              </li>
-    
-              <li>
-                <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">Week_6 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-                <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Dashboard in Action Part 2 - Teaching more advanced App and Dashboard skills and features (more custom stylizing using css) + Time for students to work on their dashboard. Students showcase their projects.
-                  </p>
-                </div>
-              </li>
-    
-            </ul>
-    
-          </div>
-      </section><!-- End Frequently Asked Questions Section -->
+        
     </section><!-- End Blog Single Section -->
 
 
@@ -334,7 +408,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
   
 </body>
 
