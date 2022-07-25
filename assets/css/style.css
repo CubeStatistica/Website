@@ -872,7 +872,63 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--primary);;
 } */
+/*--------------------------------------------------------------
+# Founders
+--------------------------------------------------------------*/
+.img-border {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+}
 
+.img-border::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 3rem;
+  bottom: 3rem;
+  border: 5px solid var(--primary);
+}
+
+.img-border img {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: calc(100% - 3rem);
+  height: calc(100% - 3rem);
+  object-fit: cover;
+}
+.founders .content+.content {
+  margin-top: 100px;
+}
+
+.founders .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.founders .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.founders .content ul li {
+  padding-bottom: 10px;
+}
+
+.founders .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #3b4ef8;
+}
+
+.founders .content p:last-child {
+  margin-bottom: 0;
+}
+.founder-bg {
+  background-color: #f6f8fb;
+}
 
 /*--------------------------------------------------------------
 # Team
