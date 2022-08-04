@@ -317,3 +317,9 @@ window.onclick = (e) => {
     acc_contents.forEach((acc) => acc.classList.remove("active"));
   }
 };
+
+var preloader = document.getElementById('loading');
+
+function loader(){
+  preloader.style.display = 'none';
+}
