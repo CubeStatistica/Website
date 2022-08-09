@@ -804,7 +804,7 @@ transition: 0.6s;
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+/* .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 .portfolio #portfolio-flters {
@@ -905,6 +905,46 @@ transition: 0.6s;
 }
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
+} */
+.project {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.project h6 {
+  font-weight: 400;
+}
+
+.project h6::before {
+  content: "";
+  height: 2px;
+  width: 30px;
+  display: inline-block;
+  background: var(--brand);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+.project .overlay {
+  width: 100%;
+  height: 220px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--dark) 100%);
+}
+
+.project .content {
+  position: absolute;
+  left: 10%;
+  bottom: 10%
+}
+
+.project h2,
+.project h6 {
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
