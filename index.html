@@ -26,12 +26,20 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
   <!-- Animate CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
 </head>
 
 <body onload="loader()">
@@ -324,7 +332,7 @@
           </div>
       </div>
   </section> -->
-  <section class="services-area service-bg" id="services">
+  <section class="services-area bg-light" id="services">
     <div class="container" data-aos="fade-up">
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
@@ -431,77 +439,77 @@
       <!-- End Course Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Our Successful Projects.</p>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-md-6 d-flex align-items-stretch portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/p-1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/p-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
+    <section class="bg-light" id="portfolio" data-aos="fade-up">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                <div class="section-title">
+                  <h2>Portfolio</h2>
+                </div>  
               </div>
-            </div>
           </div>
-
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/p-2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/p-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 d-flex align-items-stretch mt-4 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/p-3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/p-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 d-flex align-items-stretch mt-4 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/p-4.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/p-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="#" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-        </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+      <div id="projects-slider" class="owl-theme owl-carousel">
+          <div class="project">
+              <div class="overlay"></div>
+              <img src="assets/img/portfolio/p-1.png" alt="">
+              <div class="content">
+                  <h6>Costs per Page to Review</h6>
+              </div>
+          </div>
+          <div class="project">
+              <div class="overlay"></div>
+              <img src="assets/img/portfolio/p-2.png" alt="">
+              <div class="content">
+                  <h6>Closed within 30 days</h6>
+              </div>
+          </div>
+          <div class="project">
+              <div class="overlay"></div>
+              <img src="assets/img/portfolio/p-3.png" alt="">
+              <div class="content">
+                  <h6>Costs Trends</h6>
+              </div>
+          </div>
+          <div class="project">
+              <div class="overlay"></div>
+              <img src="assets/img/portfolio/p-4.png" alt="">
+              <div class="content">
+                  <h6>Informal Requests Trends</h6>
+              </div>
+          </div>
+          <div class="project">
+              <div class="overlay"></div>
+              <img src="assets/img/portfolio/p-5.png" alt="">
+              <div class="content">
+                  <h6>Financial Vulnerability</h6>
+              </div>
+          </div>
+          <div class="project">
+            <div class="overlay"></div>
+            <img src="assets/img/portfolio/p-6.png" alt="">
+            <div class="content">
+                <h6>Monetary Base to GDP</h6>
+            </div>
+        </div>
+        <div class="project">
+          <div class="overlay"></div>
+          <img src="assets/img/portfolio/p-7.png" alt="">
+          <div class="content">
+              <h6>Gen: Gov Gross Debt to GDP</h6>
+          </div>
+      </div>
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="assets/img/portfolio/p-9.png" alt="">
+        <div class="content">
+            <h6>Border Financial Assets to Liabilities</h6>
+        </div>
+    </div>
+      </div>
+  </section>
+<!-- End Portfolio Section -->
+
     <!-- ======= Founder Section ======= -->
     <section id="founders" class="founders section-bg" data-aos="fade-up">
       <div class="container">
@@ -689,6 +697,8 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/jquery.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
