@@ -1623,7 +1623,7 @@ transition: 0.6s;
   height: 40px;
   margin-right: 5px;
   padding: 11px 0 10px 0;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 16px;
   text-align: center;
   color: #ffffff;
@@ -1635,8 +1635,8 @@ transition: 0.6s;
   background: #00acee;
 }
 
-.team-9 .team-social a.social-fb {
-  background: #3b5998;
+.team-9 .team-social a.social-gt {
+  background: black;
   cursor: pointer;
 }
 
@@ -1644,8 +1644,8 @@ transition: 0.6s;
   background: #0e76a8;
 }
 
-.team-9 .team-social a.social-in {
-  background: #3f729b;
+.team-9 .team-social a.social-st {
+  background: #ED8D42;
 }
 
 .team-9 .team-social a.social-yt {
@@ -1659,6 +1659,8 @@ transition: 0.6s;
 .team-9 .team-social a:hover {
   background: #222222;
 }
+
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
