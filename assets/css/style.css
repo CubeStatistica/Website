@@ -553,7 +553,7 @@ section {
   top: 3rem;
   left: 3rem;
   width: calc(100% - 3rem);
-  height: calc(100% - 3rem);
+  height: calc(80% - 3rem);
   object-fit: cover;
 }
 /*--------------------------------------------------------------
