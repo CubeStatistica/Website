@@ -1750,6 +1750,149 @@ img{
 
 
 /*--------------------------------------------------------------
+# Get Started
+--------------------------------------------------------------*/
+.map {
+  height: 450px;
+  z-index: 1;
+}
+
+.contact-info-box {
+  margin-top: 20px;
+}
+
+.contact-info-box i {
+  float: left;
+  font-size: 24px;
+  color: #ffb600;
+}
+
+.contact-info-box-content {
+  padding-left: 40px;
+}
+
+.contact-info-box-content h4 {
+  font-size: 16px;
+  margin-top: 0;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.contact-info-box-content p {
+  margin-bottom: 0;
+}
+
+label {
+  font-weight: 400;
+}
+
+/* Contact page 2 */
+.ts-service-box.text-center .ts-service-icon.icon-squre i {
+  float: none;
+  margin-bottom: 20px;
+}
+
+.ts-service-box.text-center .ts-service-box-content {
+  margin: 0;
+}
+
+/* News Listing
+================================================== */
+.post {
+  border-bottom: 1px solid #dadada;
+  padding: 0 0 30px;
+  margin: 0 0 45px;
+}
+
+.post.last {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.post-body {
+  padding: 20px 0;
+}
+
+.entry-header .entry-title {
+  font-size: 24px;
+  margin: 5px 0 15px;
+  position: relative;
+  line-height: 34px;
+  text-transform: capitalize;
+}
+
+.entry-header .entry-title a {
+  color: #303030;
+}
+
+.entry-header .entry-title a:hover {
+  color: #ffb600;
+}
+
+.post-single .entry-header .entry-title {
+  font-size: 28px;
+}
+
+/* Meta */
+.post-meta {
+  padding-bottom: 10px;
+}
+
+.post-meta a {
+  color: #303030;
+}
+
+.post-meta a:hover {
+  color: #ffb600;
+}
+
+.post-meta span {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #dadada;
+  line-height: 12px;
+  display: inline-block;
+}
+
+.post-meta i {
+  color: #bbb;
+  margin-right: 3px;
+}
+
+.post-meta .post-comment {
+  border-right: 0;
+}
+
+.post-meta .post-comment .comments-link {
+  margin-left: 5px;
+}
+
+.post-footer .btn.btn-primary {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Pagination */
+.paging {
+  margin-bottom: -5px;
+}
+
+.pagination li a {
+  border-radius: 0 !important;
+  margin-right: 8px;
+  color: #7c7c7c;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > li > a:hover {
+  color: #fff;
+  background: #ffb600;
+  border: 1px solid transparent;
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
