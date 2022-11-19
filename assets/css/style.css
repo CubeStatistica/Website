@@ -494,7 +494,7 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+/* .breadcrumbs {
   padding: 15px 0;
   background: #2b2b2b;
   min-height: 100%;
@@ -528,7 +528,7 @@ section {
   padding-right: 10px;
   color: #e03a3c;
   content: "/";
-}
+} */
 
 /*--------------------------------------------------------------
 # About Us
@@ -1752,144 +1752,203 @@ img{
 /*--------------------------------------------------------------
 # Get Started
 --------------------------------------------------------------*/
-.map {
-  height: 450px;
-  z-index: 1;
+.breadcrumbs .page-header {
+  padding: 140px 0 80px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.contact-info-box {
-  margin-top: 20px;
+.breadcrumbs .page-header:before {
+  content: "";
+  background-color: rgba(14, 29, 52, 0.8);
+  position: absolute;
+  inset: 0;
 }
 
-.contact-info-box i {
-  float: left;
-  font-size: 24px;
-  color: #ffb600;
+.breadcrumbs .page-header h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
 }
 
-.contact-info-box-content {
-  padding-left: 40px;
+.breadcrumbs .page-header p {
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.contact-info-box-content h4 {
-  font-size: 16px;
-  margin-top: 0;
-  line-height: normal;
-  font-weight: 700;
-}
-
-.contact-info-box-content p {
-  margin-bottom: 0;
-}
-
-label {
-  font-weight: 400;
-}
-
-/* Contact page 2 */
-.ts-service-box.text-center .ts-service-icon.icon-squre i {
-  float: none;
-  margin-bottom: 20px;
-}
-
-.ts-service-box.text-center .ts-service-box-content {
-  margin: 0;
-}
-
-/* News Listing
-================================================== */
-.post {
-  border-bottom: 1px solid #dadada;
-  padding: 0 0 30px;
-  margin: 0 0 45px;
-}
-
-.post.last {
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border-bottom: 0;
-}
-
-.post-body {
+.breadcrumbs nav {
+  background-color: #f3f6fc;
   padding: 20px 0;
 }
 
-.entry-header .entry-title {
-  font-size: 24px;
-  margin: 5px 0 15px;
-  position: relative;
-  line-height: 34px;
-  text-transform: capitalize;
+.breadcrumbs nav ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-secondary);
 }
 
-.entry-header .entry-title a {
-  color: #303030;
+.breadcrumbs nav ol a {
+  color: var(--color-primary);
+  transition: 0.3s;
 }
 
-.entry-header .entry-title a:hover {
-  color: #ffb600;
+.breadcrumbs nav ol a:hover {
+  text-decoration: underline;
 }
 
-.post-single .entry-header .entry-title {
-  font-size: 28px;
+.breadcrumbs nav ol li+li {
+  padding-left: 10px;
 }
 
-/* Meta */
-.post-meta {
-  padding-bottom: 10px;
-}
-
-.post-meta a {
-  color: #303030;
-}
-
-.post-meta a:hover {
-  color: #ffb600;
-}
-
-.post-meta span {
-  margin-right: 10px;
-  padding-right: 10px;
-  border-right: 1px solid #dadada;
-  line-height: 12px;
+.breadcrumbs nav ol li+li::before {
   display: inline-block;
+  padding-right: 10px;
+  color: #4278cc;
+  content: "/";
 }
 
-.post-meta i {
-  color: #bbb;
-  margin-right: 3px;
+
+
+.get-a-quote .quote-bg {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
 }
 
-.post-meta .post-comment {
-  border-right: 0;
+.get-a-quote .php-email-form {
+  background: #f3f6fc;
+  padding: 40px;
+  height: 100%;
 }
 
-.post-meta .post-comment .comments-link {
-  margin-left: 5px;
+@media (max-width: 575px) {
+  .get-a-quote .php-email-form {
+    padding: 20px;
+  }
 }
 
-.post-footer .btn.btn-primary {
-  font-size: 12px;
-  margin-top: 10px;
+.get-a-quote .php-email-form h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Pagination */
-.paging {
-  margin-bottom: -5px;
+.get-a-quote .php-email-form h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0 0 0;
 }
 
-.pagination li a {
-  border-radius: 0 !important;
-  margin-right: 8px;
-  color: #7c7c7c;
+.get-a-quote .php-email-form p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-.pagination > .active > a,
-.pagination > .active > a:hover,
-.pagination > li > a:hover {
+.get-a-quote .php-email-form .error-message {
+  display: none;
   color: #fff;
-  background: #ffb600;
-  border: 1px solid transparent;
+  background: #df1529;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.get-a-quote .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.get-a-quote .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.get-a-quote .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #059652;
+  border-top-color: #fff;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.get-a-quote .php-email-form input,
+.get-a-quote .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.get-a-quote .php-email-form input:focus,
+.get-a-quote .php-email-form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.get-a-quote .php-email-form input {
+  padding: 12px 15px;
+}
+
+.get-a-quote .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.get-a-quote .php-email-form button[type=submit] {
+  background: var(--color-primary);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.get-a-quote .php-email-form button[type=submit]:hover {
+  background: rgba(13, 66, 255, 0.8);
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*--------------------------------------------------------------
