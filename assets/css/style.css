@@ -4443,27 +4443,32 @@ img{
 /*--------------------------------------------------------------
 # Certificate page
 --------------------------------------------------------------*/
-.certificate-r{
-	margin-top: 8em !important
-}
+
 .certificate-r .row{
-	border: 1px solid rgba(0,0,0,.15);
+	border: 1px solid hsl(213deg 12% 37%);
+	border-radius: 10px
+	
 }
 
 .certificate-text{
-	padding-top: 7em !important; 
+	padding-top: 5em !important; 
 }
 .certificate-text h6{
 	font-weight: 500;
   color: grey;
   padding-bottom: 1rem;
 }
+.certificate-text h6 img{
+	height: 46px;
+	width: 46px;
+	border-radius: 100%;
+}
 .certificate-text h3{
 	font-weight: 1000;
       
 }
 
-.certificate-r img{
+.certificate-img img{
 	width: 100% !important;
 }
 /*
@@ -4471,6 +4476,9 @@ img{
 	    padding: 10em 0;
 }
 */
+.c-text{
+  padding-top: 10em;;
+}
 .c-text h2 {
   font-size: 32px;
   font-weight: bold;
@@ -4511,4 +4519,3 @@ img{
 .c-border-e{
 	border-radius: 0px 10px 10px 0px
 }
-
