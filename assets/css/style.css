@@ -652,45 +652,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-/* .breadcrumbs {
-  padding: 15px 0;
-  background: #2b2b2b;
-  min-height: 100%;
-  margin-top: 82px;
-  color: #fff;
-  }
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 500;
-}
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-.breadcrumbs ol a {
-  color: #aaaaaa;
-}
-.breadcrumbs ol a:hover {
-  color: #fff;
-  transition: 0.3s;
-}
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #e03a3c;
-  content: "/";
-} */
-
-/*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
 .abt-border {
@@ -1359,43 +1320,43 @@ section {
 /*--------------------------------------------------------------
 # Course Detail Page
 --------------------------------------------------------------*/
-.blog {
+.course_detail {
   padding: 40px 0 20px 0;
   margin-top: -100px;
 }
 @media screen and (max-width: 768px) {
-  .blog{
+  .course_detail{
     margin-top: 0;
   }
 }
-.blog .entry {
+.course_detail .entry {
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-.blog .entry .entry-img {
+.course_detail .entry .entry-img {
   max-height: 440px;
   margin: -30px -30px 20px -30px;
   overflow: hidden;
 }
-.blog .entry .entry-title {
+.course_detail .entry .entry-title {
   font-size: 28px;
   font-weight: bold;
   padding: 0;
   margin: 0 0 20px 0;
 }
-.blog .entry .entry-title a {
+.course_detail .entry .entry-title a {
   color: #111111;
   transition: 0.3s;
 }
-.blog .entry .entry-title a:hover {
+.course_detail .entry .entry-title a:hover {
   color: var(--primary);
 }
-.blog .entry .entry-meta {
+.course_detail .entry .entry-meta {
   margin-bottom: 15px;
   color: #777777;
 }
-.blog .entry .entry-meta ul {
+.course_detail .entry .entry-meta ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -1403,28 +1364,28 @@ section {
   padding: 0;
   margin: 0;
 }
-.blog .entry .entry-meta ul li{
+.course_detail .entry .entry-meta ul li{
   padding-left: 20px;
 }
-.blog .entry .entry-meta i {
+.course_detail .entry .entry-meta i {
   font-size: 16px;
   margin-right: 8px;
   line-height: 0;
 }
-.blog .entry .entry-meta a {
+.course_detail .entry .entry-meta a {
   color: #777777;
   font-size: 14px;
   display: inline-block;
   line-height: 1;
 }
-.blog .entry .entry-content p {
+.course_detail .entry .entry-content p {
   line-height: 24px;
 }
-.blog .entry .entry-content .read-more {
+.course_detail .entry .entry-content .read-more {
   -moz-text-align-last: right;
   text-align-last: right;
 }
-.blog .entry .entry-content .read-more a {
+.course_detail .entry .entry-content .read-more a {
   display: inline-block;
   background: #e03a3c;
   color: #fff;
@@ -1433,15 +1394,15 @@ section {
   font-size: 14px;
   border-radius: 4px;
 }
-.blog .entry .entry-content .read-more a:hover {
+.course_detail .entry .entry-content .read-more a:hover {
   background: #e35052;
 }
-.blog .entry .entry-content h3 {
+.course_detail .entry .entry-content h3 {
   font-size: 22px;
   margin-top: 30px;
   font-weight: bold;
 }
-.blog .entry .entry-content blockquote {
+.course_detail .entry .entry-content blockquote {
   overflow: hidden;
   background-color: #fafafa;
   padding: 60px;
@@ -1449,7 +1410,7 @@ section {
   text-align: center;
   margin: 20px 0;
 }
-.blog .entry .entry-content blockquote p {
+.course_detail .entry .entry-content blockquote p {
   color: #444444;
   line-height: 1.6;
   margin-bottom: 0;
@@ -1457,7 +1418,7 @@ section {
   font-weight: 500;
   font-size: 22px;
 }
-.blog .entry .entry-content blockquote::after {
+.course_detail .entry .entry-content blockquote::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1468,77 +1429,77 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.blog .entry .entry-footer {
+.course_detail .entry .entry-footer {
   padding-top: 10px;
   border-top: 1px solid #e6e6e6;
 }
-.blog .entry .entry-footer i {
+.course_detail .entry .entry-footer i {
   color: #5e5e5e;
   display: inline;
 }
-.blog .entry .entry-footer a {
+.course_detail .entry .entry-footer a {
   color: #1e1e1e;
   transition: 0.3s;
 }
-.blog .entry .entry-footer a:hover {
+.course_detail .entry .entry-footer a:hover {
   color: #e03a3c;
 }
-.blog .entry .entry-footer .cats {
+.course_detail .entry .entry-footer .cats {
   list-style: none;
   display: inline;
   padding: 0 20px 0 0;
   font-size: 14px;
 }
-.blog .entry .entry-footer .cats li {
+.course_detail .entry .entry-footer .cats li {
   display: inline-block;
 }
-.blog .entry .entry-footer .tags {
+.course_detail .entry .entry-footer .tags {
   list-style: none;
   display: inline;
   padding: 0;
   font-size: 14px;
 }
-.blog .entry .entry-footer .tags li {
+.course_detail .entry .entry-footer .tags li {
   display: inline-block;
 }
-.blog .entry .entry-footer .tags li + li::before {
+.course_detail .entry .entry-footer .tags li + li::before {
   padding-right: 6px;
   color: #6c757d;
   content: ",";
 }
-.blog .entry .entry-footer .share {
+.course_detail .entry .entry-footer .share {
   font-size: 16px;
 }
-.blog .entry .entry-footer .share i {
+.course_detail .entry .entry-footer .share i {
   padding-left: 5px;
 }
-.blog .entry-single {
+.course_detail .entry-single {
   margin-bottom: 30px;
 }
-.blog .blog-author {
+.course_detail .course_detail-author {
   padding: 20px;
   margin-bottom: 30px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-.blog .blog-author img {
+.course_detail .course_detail-author img {
   width: 120px;
   margin-right: 20px;
 }
-.blog .blog-author h4 {
+.course_detail .course_detail-author h4 {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
   color: #111111;
 }
-.blog .blog-author .social-links {
+.course_detail .course_detail-author .social-links {
   margin: 0 10px 10px 0;
 }
-.blog .blog-author .social-links a {
+.course_detail .course_detail-author .social-links a {
   color: rgba(17, 17, 17, 0.5);
   margin-right: 5px;
 }
-.blog .blog-author p {
+.course_detail .course_detail-author p {
   font-style: italic;
   color: #b7b7b7;
 }
@@ -2467,7 +2428,7 @@ img{
 }
 
 .aside-title,
-.category-title {
+.Blog-title {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 14px;
@@ -2476,7 +2437,7 @@ img{
   border-bottom: 2px solid var(#000000);
 }
 
-.category-title {
+.Blog-title {
   border-bottom: none;
 }
 
@@ -2819,7 +2780,6 @@ img{
   color: #fff;
   text-decoration: none;
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 :root {
   --primary: #0d6efd;
@@ -3316,7 +3276,7 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+/* .breadcrumbs {
   padding: 15px 0;
   background: #2b2b2b;
   min-height: 100%;
@@ -3350,7 +3310,7 @@ section {
   padding-right: 10px;
   color: #e03a3c;
   content: "/";
-}
+} */
 
 /*--------------------------------------------------------------
 # About Us
@@ -3607,82 +3567,6 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-/*--------------------------------------------------------------
-# Course
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #2b2b2b;
-  text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-}
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.pricing .box h1 {
-  font-size: 42px;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-.pricing .box h4 span {
-  font-size: 16px;
-  font-weight: 300;
-}
-.pricing .box ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-.pricing .box ul i {
-  color: var(--primary);
-  font-size: 18px;
-  padding-right: 4px;
-}
-.pricing .box ul .na {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: line-through;
-}
-.pricing .box .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-.pricing .box .btn-buy {
-  display: inline-block;
-  padding: 10px 40px 12px 40px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
-.pricing .box .btn-buy:hover {
-  border-color: #fff;
-}
-.ceo-social{
-	font-size: 24px;
-}
-
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -4637,27 +4521,32 @@ img{
 /*--------------------------------------------------------------
 # Certificate page
 --------------------------------------------------------------*/
-.certificate-r{
-	margin-top: 8em !important
-}
+
 .certificate-r .row{
-	border: 1px solid rgba(0,0,0,.15);
+	border: 1px solid hsl(213deg 12% 37%);
+	border-radius: 10px
+	
 }
 
 .certificate-text{
-	padding-top: 7em !important; 
+	padding-top: 5em !important; 
 }
 .certificate-text h6{
 	font-weight: 500;
   color: grey;
   padding-bottom: 1rem;
 }
+.certificate-text h6 img{
+	height: 46px;
+	width: 46px;
+	border-radius: 100%;
+}
 .certificate-text h3{
 	font-weight: 1000;
       
 }
 
-.certificate-r img{
+.certificate-img img{
 	width: 100% !important;
 }
 /*
@@ -4665,6 +4554,9 @@ img{
 	    padding: 10em 0;
 }
 */
+.c-text{
+  padding-top: 10em;;
+}
 .c-text h2 {
   font-size: 32px;
   font-weight: bold;
@@ -4705,4 +4597,3 @@ img{
 .c-border-e{
 	border-radius: 0px 10px 10px 0px
 }
-
