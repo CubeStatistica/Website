@@ -4522,7 +4522,7 @@ img{
 # Certificate page
 --------------------------------------------------------------*/
 
-.certificate-r .row{
+.certificate-border{
 	border: 1px solid hsl(213deg 12% 37%);
 	border-radius: 10px
 	
