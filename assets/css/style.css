@@ -774,6 +774,10 @@ section {
 }
 
 
+/*--------------------------------------------------------------
+# Course Cards
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Course
@@ -2154,7 +2158,7 @@ list-style:none;
 .share-btn ul li{
 display:inline-block;
 margin-left: -40px;
-float: left;
+/* float: left; */
 transition:all 0.5s;
 -moz-transition:all 0.5s;
 -o-transition:all 0.5s;
