@@ -2466,7 +2466,7 @@ padding: 8px 30px;
 	color:#000;
 }
 .comments-bx i{
-	margin-right:5px;
+	margin-right:4px;
 }
 .post-extra {
     display: flex;
@@ -2521,155 +2521,234 @@ padding: 8px 30px;
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  color: #fff;
-  font-size: 14px;
-  background: #111111;
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer h1 a,
+footer h2 a,
+footer h3 a,
+footer h4 a,
+footer h5 a,
+footer h6 a {
+    color: #b0b0b0;
 }
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #1b1b1b;
+footer p,
+footer strong,
+footer b,
+footer {
+    color: #b0b0b0;
 }
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+footer h1 a,
+footer h2 a,
+footer h3 a,
+footer h4 a,
+footer h5 a,
+footer h6 a,
+footer p a {
+    color: #b0b0b0;
 }
-#footer .footer-top .footer-contact h3 {
-  font-size: 26px;
-  line-height: 1;
-  font-weight: 700;
+
+footer .btn-link,
+footer a,
+footer p a {
+    color: #b0b0b0;
 }
-#footer .footer-top .footer-contact h3 span {
-  color: var(--primary);
+footer a:active,
+footer a:focus,
+footer a:hover {
+    color: #b0b0b0;
 }
-#footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+/* widget color */
+footer .widget_categories ul li a,
+footer .widget_archive ul li a,
+footer .widget_meta ul li a,
+footer .widget_pages ul li a,
+footer .widget_recent_comments ul li a,
+footer .widget_nav_menu li a,
+footer .widget_recent_entries ul li a,
+footer .widget_services ul li a {
+    color: #b0b0b0;
 }
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 12px;
+footer.text-white .widget_categories ul li a, 
+footer.text-white .widget_archive ul li a, 
+footer.text-white .widget_meta ul li a, 
+footer.text-white .widget_pages ul li a, 
+footer.text-white .widget_recent_comments ul li a, 
+footer.text-white .widget_nav_menu li a, 
+footer.text-white .widget_recent_entries ul li a, 
+footer.text-white .widget_services ul li a, 
+footer.text-white a, 
+footer.text-white .footer-bottom, 
+footer.text-white p, 
+footer.text-white strong, 
+footer.text-white b, 
+footer.text-white .widget .post-title, 
+footer.text-white .widget-about .ttr-title, 
+footer.text-white {
+    color: #fff;
 }
-#footer .footer-top h4::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: var(--primary);
-  bottom: 0;
-  left: 0;
+footer p {
+    margin-bottom: 10px;
 }
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
+footer p,
+footer li {
+    font-size: 15px;
+    line-height: 22px;
 }
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+footer#footer {
+    background-position: center;
+    background-size: cover;
 }
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: white;
-  font-size: 18px;
-  line-height: 1;
+footer p {
+    line-height: 24px;
+    margin-bottom: 10px;
 }
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
+footer .widget ul {
+    list-style: none;
+    margin-top: 5px;
 }
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
+/*widget li in footer*/
+footer .widget_categories ul li,
+footer .widget_archive ul li,
+footer .widget_meta ul li,
+footer .widget_pages ul li,
+footer .widget_recent_comments ul li,
+footer .widget_nav_menu li,
+footer .widget_recent_entries ul li,
+footer .widget_services ul li {
+    border-bottom: 1px dashed rgba(102, 102, 102, 0.3);
 }
-#footer .footer-top .footer-links ul a {
-  color: #aaaaaa;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
+footer .widget_services ul li {
+	transition:all 1s;
+	-ms-transition:all 1s;
+	-o-transition:all 1s;
+	-moz-transition:all 1s;
+	-webkit-transition:all 1s;
+	padding: 10px 0px 10px 15px;
 }
-#footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: #fff;
+footer .widget_services ul li:hover {
+	transform: translateX(10px);
+	-moz-transform: translateX(10px);
+	-webkit-transform: translateX(10px);
+	-o-transform: translateX(10px);
+	-ms-transform: translateX(10px);
 }
-#footer .footer-newsletter {
-  font-size: 15px;
+.footer-top {
+    background: #303030;
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 20px;
+	font-family:rubik;
 }
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 12px;
+.footer-bottom {
+    background-color:#303030;
+    padding: 25px 0;
+    color: #b0b0b0;
+	border-top:1px solid rgba(255,255,255,0.05);
+	font-family:rubik;
 }
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 5px 10px;
-  position: relative;
-  border-radius: 4px;
-  text-align: left;
+.footer-bottom ul {
+    margin: 0;
 }
-#footer .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
+.footer-title{
+	margin-bottom: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 16px;
+    position: relative;
 }
-#footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: -1px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: var(--primary);
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+.footer-title:after{
+	width: 50px;
+    background: #fff;
+    opacity: 0.2;
+    height: 1px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: var(--brand);
+.footer_widget ul li a{
+	padding:5px 0;
+	display:block;
+	font-weight: 400;
 }
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
+/* Subscribe Form */
+.subscribe-form input{
+	background-color:rgba(0,0,0,0.2);
+	border:0;
+	height:45px;
+	padding:10px 20px;
+	margin-right:5px;
+	color:#fff;
+	font-size:15px;
 }
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #2b2b2b;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 4px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+.subscribe-form .btn{
+	border-radius: 0;
 }
-#footer .social-links a:hover {
-  background: var(--brand);
-  color: #fff;
-  text-decoration: none;
+.subscribe-form input.radius-no{
+	border-radius:0 !important;
 }
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
-:root {
-  --primary: #0d6efd;
-  --brand: #1107fe;
-  --white: #ffffff;
-  --dark: #092032;
-  --body: #516171;
-  --orange:#ffa500;
-  --border: rgba(0,0,0,0.08);
-  --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
-  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+.subscribe-form .btn{
+	height:45px;
 }
+.subscribe-form .input-group-btn{
+	padding-left: 10px;
+}
+/* scroll top btn css */
+button.back-to-top {
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0;
+    bottom: 15px;
+    box-shadow: 2px 2px 12px -5px #000000;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    line-height: 26px;
+    margin: 0;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    width: 40px;
+    z-index: 999;
+}
+/* Footer Extra */
+.pt-exebar{
+	border-bottom:1px solid rgba(255,255,255,0.1);
+	margin-bottom:50px;
+}
+.pt-social-link{
+	border-left:1px solid rgba(255,255,255,0.1);
+	padding:0 20px;
+}
+.pt-social-link ul{
+	margin:0;
+	list-style:none;
+}
+.pt-social-link ul li{
+	display:inline-block;
+}
+.pt-btn-join{
+	border-left:1px solid rgba(255,255,255,0.1);
+	padding:0 0 0 20px;
+}
+.pt-logo{
+	padding:20px 0;
+}
+
+.pt-social-link,
+.pt-btn-join,
+.pt-logo{
+	display: flex;
+    align-items: center;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
