@@ -1003,14 +1003,14 @@ section {
 --------------------------------------------------------------*/
 /* Profile Box */
 .personal-info li .title {
-	color: #515365;
+	color: #000;
 	float: left;
 	font-weight: 500;
 	margin-right: 30px;
 	width: 30%;
 }
 .personal-info li .text {
-	color: #888da8;
+	color: #000;
 	display: block;
 	overflow: hidden;
 }
@@ -1023,7 +1023,7 @@ section {
 	padding: 0;
 }
 .personal-info .text > a {
-	color: #009efb;
+	color: #000;
 }
 
 .profile-bx{
