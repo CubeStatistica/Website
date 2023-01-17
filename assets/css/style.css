@@ -777,6 +777,86 @@ section {
 /*--------------------------------------------------------------
 # Course Cards
 --------------------------------------------------------------*/
+/* Event Box */
+.event-bx{
+	box-shadow:0 0 15px 0 rgba(29,25,0,0.25);
+}
+.upcoming-event-carousel{
+	margin-top:-15px;
+}
+.upcoming-event-carousel .item{
+	padding:15px;
+}
+.event-bx .info-bx{
+	padding:30px;
+}
+.event-time{
+	color: #fff;
+    background-color: var(--primary);
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+.event-time .event-date{
+	font-size: 55px;
+    font-family: rubik;
+    font-weight: 700;
+    line-height: 55px;
+}
+.event-info .event-title{
+	font-family:rubik;
+	font-weight:500;
+	margin-bottom:5px;
+	font-size:24px;
+}
+.event-info .media-post{
+	margin-bottom:10px;
+}
+.event-info .media-post li a{
+	text-transform: capitalize;
+    font-size: 14px;
+	color:#757575;
+}
+.event-info p{
+	color: #454545;
+    margin-bottom: 0;
+    font-family: rubik;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.upcoming-event-carousel  .owl-item {
+	box-shadow: none;
+    transform: scale(0.9);
+	transition: all 0.5s;
+	opacity:0.4;
+}
+.upcoming-event-carousel .owl-item .item{
+	padding:0;
+}
+.upcoming-event-carousel .owl-item.active.center .item{
+	padding:15px;
+}
+.upcoming-event-carousel .owl-item.active.center{
+    transform: scale(1);
+	transition: all 0.5s;
+	opacity:1;
+}
+.upcoming-event-carousel.owl-btn-1 .owl-prev,
+.upcoming-event-carousel.owl-btn-1 .owl-next{
+	margin: 0 100px !important;
+    font-size: 20px;
+    background-color: var(--primary);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+}
+.upcoming-event-carousel.owl-btn-1 .owl-prev:hover,
+.upcoming-event-carousel.owl-btn-1 .owl-next:hover{
+	background-color: var(--sc-primary);
+}
 
 
 /*--------------------------------------------------------------
