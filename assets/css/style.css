@@ -412,6 +412,18 @@ ul,ol {
 
 
 /* Banner Video */
+.btn-outline-light {
+  border: solid;
+  border-width: 2px;
+  border-color: #fff;
+  /* background-color: var(--brand); */
+  color: #fff;
+}
+.btn-outline-light:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
 
 .home{
   padding: 100px 200px;
