@@ -999,6 +999,153 @@ section {
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
+# Founders Profile
+--------------------------------------------------------------*/
+/* Profile Box */
+.personal-info li .title {
+	color: #000;
+	float: left;
+	font-weight: 500;
+	margin-right: 30px;
+	width: 30%;
+}
+.personal-info li .text {
+	color: #000;
+	display: block;
+	overflow: hidden;
+}
+.personal-info li {
+	margin-bottom: 10px;
+}
+.personal-info {
+	list-style: none;
+	margin-bottom: 0;
+	padding: 0;
+}
+.personal-info .text > a {
+	color: #000;
+}
+
+.profile-bx{
+	border:1px solid #e9e9e9;
+	position:sticky;
+	top:100px;
+}
+.user-profile-thumb{
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	border-radius:100px;
+	border: 5px solid #fff;
+	box-shadow:0 0 15px 0 rgba(0,0,0,0.2);
+	margin:25px auto 15px; 
+}
+.user-profile-thumb img{
+	width:100px;
+	height:100px;
+}
+.profile-info{
+	margin-bottom:15px;
+}
+.profile-info h4{
+	font-size:18px;	
+	margin-bottom: 0;
+}
+.profile-info span{
+	font-size:12px;
+	color:#717171;
+}
+.profile-social ul li a{
+	width: 35px;
+    height: 35px;
+    display: block;
+    text-align: center;
+    border: 1px solid #e9e9e9;
+    line-height: 34px;
+    border-radius: 40px;
+    color: #000;
+    font-size: 14px;
+}
+.profile-social{
+	border-bottom: 1px solid #e9e9e9;
+	padding-bottom:15px;
+}
+.profile-content-bx{
+	border: 1px solid #e9e9e9;
+}
+.profile-tabnav{ 
+	margin:20px 0;
+}
+.profile-tabnav .nav{ 
+	border:0;
+}
+.profile-tabnav .nav li{  
+	display:block;
+	width:100%;
+}
+.profile-tabnav .nav li a{
+	border:0;
+	color: #8a8a8a;
+	font-size: 15px;
+	text-align: left;
+	padding: 10px 30px;
+}
+.profile-tabnav .nav li a.active{
+	background-color: var(--primary);
+	color: #fff;
+	border-radius: 0;
+}
+.profile-tabnav .nav li a i{
+	margin-right:10px;
+}
+.profile-head h3{
+	font-size:20px;
+	text-transform:uppercase;
+	margin-bottom:0;
+	font-weight:500;
+}
+.profile-head{
+	display:flex;
+	padding: 10px 15px 10px 30px;
+	border-bottom: 1px solid #e9e9e9;
+	align-items: center;
+}
+.profile-head .feature-filters{
+	margin-bottom:0;
+}
+.courses-filter .action-card{
+	margin-bottom:30px;
+}
+.courses-filter{
+	padding:30px 30px 0 30px;
+}
+.profile-head .feature-filters.style1 li a{
+	font-weight: 400;
+	font-size: 15px;
+}
+.edit-profile h3{
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0;
+}
+.edit-profile .help{
+	font-size:12px;
+	line-height:18px;
+
+	display: block;
+}
+.edit-profile .col-form-label{
+	font-size:14px;
+	font-weight: 400;
+}
+.edit-profile{
+	padding:30px;
+}
+.edit-profile .form-group {
+	margin-bottom: 15px;
+}
+
+/*--------------------------------------------------------------
 # Founders
 --------------------------------------------------------------*/
 .img-border {
@@ -4139,11 +4286,9 @@ section {
 	font-size:16px;
 	color:var(--primary);
 }
-.course-features li .label{
-	width:60%;
-}
+
 .course-features li .value{
-	width:40%;
+	width:100%;
 }
 .curriculum-list ul li,
 .curriculum-list{
