@@ -320,6 +320,9 @@ window.onclick = (e) => {
   }
 };
 
+
+
+
 var preloader = document.getElementById('loading');
 
 function loader(){
@@ -419,6 +422,9 @@ function initHeroSlider()
 			}
 		}	
 	}
+
+
+
 
 
 
