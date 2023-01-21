@@ -1011,6 +1011,7 @@ section {
 --------------------------------------------------------------*/
 .card {
   box-shadow: 0px 4px 8px 0px #BDBDBD;
+  height: 35rem;
 }
 
 .profile-pic {
