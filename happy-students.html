@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Blogs</title>
+  <title>Happy Students</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -54,6 +54,10 @@
   <link class="skin" rel="stylesheet" type="text/css" href="assets/css/color-1.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
 
 
 </head>
@@ -108,14 +112,12 @@
 
   <!-- ======= Breadcrumbs ======= -->
   <div class="breadcrumbs">
-    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/Get_Started/page-header.jpg');">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/testimonials/happy-students-1.jpg'); height: 30rem;">
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Get a Quote</h2>
-            <p>Got a problem that needs a solution? We can help! Our clients love us because we're friendly, 
-              enthusiastic, accommodating, and we listen to your needs.
-               We'll work with you to help you find the solutions you've been looking for!</p>
+            <h2>Happy Students</h2>
+          
           </div>
         </div>
       </div>
@@ -124,70 +126,101 @@
       <div class="container">
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Get a Quote</li>
+          <li>Course</li>
+          <li>Happy Students</li>
         </ol>
       </div>
     </nav>
   </div><!-- End Breadcrumbs -->
 
-  <section id="get-a-quote" class="get-a-quote">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row g-0">
-
-        <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/Get_Started/quote-bg.jpg);"></div>
-
-        <div class="col-lg-7">
-          <form action="forms/quote.php" method="post" class="php-email-form">
-            <h3>Get a quote</h3>
-            
-            <div class="row gy-4">
-
-              <div class="col-md-6">
-                <input type="text" name="departure" class="form-control" placeholder="First Name" required>
-              </div>
-
-              <div class="col-md-6">
-                <input type="text" name="delivery" class="form-control" placeholder="Last Name" required>
-              </div>
-
-              <div class="col-md-6">
-                <input type="text" name="weight" class="form-control" placeholder="Title" required>
-              </div>
-
-              <div class="col-md-6">
-                <input type="text" name="dimensions" class="form-control" placeholder="Company Name" required>
-              </div>
-
-              <div class="col-md-12">
-                <input type="text" name="name" class="form-control" placeholder="Subject" required>
-              </div>
-
-              <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Project Description" required></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                <p>Cube Statistica is committed to protecting and respecting your privacy. </br></br>
-                  By clicking submit, you consent to allow Cube Statistica to store and process
-                  the personal information submitted above to contact you regarding your request.
-                </p>
-                <!-- <button type="submit">Get a quote</button> -->
-                <a href="" class="get-started-btn scrollto">Submit</a>
-              </div>
-
+  <div class="container-fluid px-3 px-sm-5 my-5 text-center">
+    <h4 class="mb-5 font-weight-bold">Happy Students</h4>
+    <div class="owl-carousel owl-theme">
+        <div class="item first prev">
+            <div class="card border-0 py-3 px-4">
+                <div class="row justify-content-center">
+                    <img src="assets/img/testimonials/Berjees Sheikh.jpg" class="img-fluid profile-pic mb-4 mt-3">
+                </div>
+                <h6 class="mb-3 mt-2"><b>Berjees Sheikh</b></h6>
+                <p class="content mb-4 mx-3" style="font-family: Arial, Helvetica, sans-serif; justify-content: right;"> I was absolutely amazed at the amount of interest Faizan took 
+                  in each and every students' progress. He mentored us beyond the course content and it was
+                   a joy studying with him! Pros of taking the course: great instructor, great networking 
+                   opportunity Areas that can be improved: The content was a lot as compared to the 
+                   allocated time, maybe the content can be broken down into multiple courses..</p>
             </div>
-          </form>
-        </div><!-- End Quote Form -->
-
+        </div>
+        <div class="item show">
+            <div class="card border-0 py-3 px-4">
+                <div class="row justify-content-center">
+                    <img src="assets/img/testimonials/Qsim Basra.jpeg" class="img-fluid profile-pic mb-4 mt-3">
+                </div>
+                <h6 class="mb-3 mt-2"><b>Qsim Basra</b></h6>
+                <p class="content mb-4 mx-3" style="font-family: Arial, Helvetica, sans-serif; justify-content: right;">It was a great learning experience with the Cube Statistica team. 
+                  The content of the course was informative, especially the GitHub and Gitbash workflow for
+                   collaboration which was conducted at the beginning of the course. I really improved my 
+                   visualization and data cleansing skills from the course. A few things can be improved
+                    like more theoretical content regarding some advance topics like Machine Learning etc..</p>
+            </div>
+        </div>
+        <div class="item next">
+            <div class="card border-0 py-3 px-4">
+                <div class="row justify-content-center">
+                    <img src="assets/img/testimonials/Soha Khan.jpeg" class="img-fluid profile-pic mb-4 mt-3">
+                </div>
+                <h6 class="mb-3 mt-2"><b>Soha Khan</b></h6>
+                <p class="content mb-4 mx-3" style="font-family: Arial, Helvetica, sans-serif; justify-content: right;">I’m really happy that I took the decision to enroll myself
+                   into this course, amidst of my full time employment. Sir Faizan made sure that the
+                    course was manageable with our other regular commitments. Besides, I admire his practical
+                     approach of teaching technical concepts in class, which instilled a more thorough and 
+                     long lasting impression of the concepts. I found him and all his TAs to be approachable
+                      and encouraging throughout the course, which made me bring out the best version of
+                       myself. At the end of six weeks, I found my knowledge in data science to be appreciably
+                        improved with a breadth of technical skills..</p>
+            </div>
+        </div>
+        <div class="item next">
+            <div class="card border-0 py-3 px-4">
+                <div class="row justify-content-center">
+                    <img src="assets/img/testimonials/Syed Hamza Ibrahim.jpg" class="img-fluid profile-pic mb-4 mt-3">
+                </div>
+                <h6 class="mb-3 mt-2"><b>Syed Hamza Ibrahim</b></h6>
+                <p class="content mb-4 mx-3" style="font-family: Arial, Helvetica, sans-serif; justify-content: right;">The course started off very well. Everyone was actively
+                   participating. Some of us lost interest as the course progressed. We were also unable
+                    to stick to the initial schedule. Everything else made sense. The teacher assistants 
+                    were excellent and composed. If we had kept to the schedule, we would have gone over
+                     ML models in depth..</p>
+            </div>
+        </div>
+        <div class="item next">
+          <div class="card border-0 py-3 px-4">
+              <div class="row justify-content-center">
+                  <img src="assets/img/testimonials/Umair Waseem.jpg" class="img-fluid profile-pic mb-4 mt-3">
+              </div>
+              <h6 class="mb-3 mt-2"><b>Umair Waseem</b></h6>
+              <p class="content mb-4 mx-3" style="font-family: Arial, Helvetica, sans-serif; justify-content: right;">Team CubeStatistica! Thankyou for creating this course.
+                 It was a wonderful learning experience with you. We have learned new stuff like R studio, 
+                 Tableau, readings about ML, experience on different datas and GIT. Starting from basics to 
+                 simple real world dataset. Sir Faizan and team done a great job. I wish we'd hear more from
+                  Sir Faizan and learn from his experiences. Now I have guidelines to follow and learning 
+                  things on my own. Hope to hear about another skill enhancement course on data science soon</p>
+          </div>
       </div>
-
+        <div class="item last">
+            <div class="card border-0 py-3 px-4">
+                <div class="row justify-content-center">
+                    <img src="assets/img/testimonials/Abdullah Sohail.jpg" class="img-fluid profile-pic mb-4 mt-3">
+                </div>
+                <h6 class="mb-3 mt-2"><b>Abdullah Sohail</b></h6>
+                <p class="content mb-4 mx-3" style="font-family: Arial, Helvetica, sans-serif; justify-content: right;">It was good. The teaching pace was well suited for beginners 
+                  and amateurs. The instructor was engaging and the TAs were phenomenal and dedicated.
+                   Generating tickets on GitHub was a good idea for project management and an added skill. 
+                   The only caveat I think was the fact that the instructor should've practically 
+                   demonstrated machine learning model techniques or an example of how to make an 
+                   app on Rshiny etc.</p>
+            </div>
+        </div>
     </div>
-  </section><!-- End Get a Quote Section -->
+</div>
          
 </main>
 <!-- End #main -->
@@ -313,4 +346,73 @@
 
 </body>
 
+
 </html>
+
+
+<script>
+    $(document).ready(function() {
+
+$('.owl-carousel').owlCarousel({
+    mouseDrag:false,
+    loop:true,
+    margin:2,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+}); 
+
+$('.owl-prev').click(function() {
+    $active = $('.owl-item .item.show');
+    $('.owl-item .item.show').removeClass('show');
+    $('.owl-item .item').removeClass('next');
+    $('.owl-item .item').removeClass('prev');
+    $active.addClass('next');
+    if($active.is('.first')) {
+        $('.owl-item .last').addClass('show');
+        $('.first').addClass('next');
+        $('.owl-item .last').parent().prev().children('.item').addClass('prev');
+    }
+    else {
+        $active.parent().prev().children('.item').addClass('show');
+        if($active.parent().prev().children('.item').is('.first')) {
+            $('.owl-item .last').addClass('prev');
+        }
+        else {
+            $('.owl-item .show').parent().prev().children('.item').addClass('prev');
+        }
+    }
+});
+
+$('.owl-next').click(function() {
+    $active = $('.owl-item .item.show');
+    $('.owl-item .item.show').removeClass('show');
+    $('.owl-item .item').removeClass('next');
+    $('.owl-item .item').removeClass('prev');
+    $active.addClass('prev');
+    if($active.is('.last')) {
+        $('.owl-item .first').addClass('show');
+        $('.owl-item .first').parent().next().children('.item').addClass('prev');
+    }
+    else {
+        $active.parent().next().children('.item').addClass('show');
+        if($active.parent().next().children('.item').is('.last')) {
+            $('.owl-item .first').addClass('next');
+        }
+        else {
+            $('.owl-item .show').parent().next().children('.item').addClass('next');
+        }
+    }
+});
+
+});
+</script>
