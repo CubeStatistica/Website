@@ -86,38 +86,6 @@ ul,ol {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# TopBar
---------------------------------------------------------------*/
-#topbar {
-  padding: 0;
-  font-size: 15px;
-  height: 50px;
-  background-color: #059652;
-  transition: all 0.5s;
-  /* background: rgba(255, 255, 255, 0.7); */
-  z-index: 996;
-  color: rgba(26, 24, 22, 0.8);
-}
-
-#topbar.topbar-transparent {
-  background: transparent;
-}
-
-#topbar.topbar-scrolled {
-  top: -50px;
-}
-
-#topbar i {
-  color: #ffb03b;
-  line-height: 0;
-}
-
-#topbar i span {
-  color: #fff;
-  font-style: normal;
-  padding-left: 5px;
-}
 
 /*--------------------------------------------------------------
 # Header
@@ -237,7 +205,7 @@ ul,ol {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffb03b;
+  color: var(--brand);
 }
 
 .navbar .dropdown ul {
@@ -274,7 +242,7 @@ ul,ol {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #ffb03b;
+  color: var(--brand);
 }
 
 .navbar .dropdown:hover>ul {
