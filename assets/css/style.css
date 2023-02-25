@@ -680,6 +680,7 @@ section {
 }
 
 .services .card {
+ height: 620px;
   border: 0;
   padding: 0 30px;
   margin-bottom: 60px;
@@ -699,6 +700,7 @@ section {
 }
 
 .services .card-body {
+  /* max-height: 250px; */
   z-index: 10;
   background: #fff;
   border-top: 4px solid #fff;
@@ -3841,6 +3843,7 @@ section {
 }
 
 .services .card-img {
+ 
   overflow: hidden;
   z-index: 9;
   border-radius: 0;
@@ -3852,6 +3855,7 @@ section {
 }
 
 .services .card-body {
+  /* display: flex; */
   z-index: 10;
   background: #fff;
   border-top: 4px solid #fff;
