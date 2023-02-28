@@ -3910,90 +3910,349 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
+.our-chefs-page.chefs {
+  padding: 0 0 100px;
+  position: relative;
+  z-index: 999;
 }
-.portfolio #portfolio-flters {
-  padding: 0;
-  margin: 0 auto 35px auto;
-  list-style: none;
-  text-align: center;
-  background: #fff;
-  border-radius: 50px;
-  padding: 2px 15px;
+
+.our-chefs-page.chefs .chefs-list {
+  margin-top: -30px;
 }
-.portfolio #portfolio-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 15px 8px 15px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #272829;
-  margin-bottom: 5px;
-  transition: all 0.3s ease-in-out;
-}
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
-}
-.portfolio #portfolio-flters li:last-child {
-  margin-right: 0;
-}
-.portfolio .portfolio-wrap {
-  transition: 0.3s;
+
+.special {
+  /* padding: 10px 0px 0; */
+  padding-top: 50px;
   position: relative;
   overflow: hidden;
-  z-index: 1;
 }
-.portfolio .portfolio-wrap::before {
+
+.special .content h2 {
+  font-family: 'Great Vibes', cursive;
+  color: #f15f2a;
+  font-size: 45px;
+  line-height: 55px;
+  margin-top: 120px;
+  overflow: hidden;
+}
+
+.special .content h2::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
+  display: inline-block;
+  height: 0.6em;
+  vertical-align: bottom;
+  width: 3%;
+  margin-right: 15px;
+  border-top: 1px solid #f15f2a;
 }
-.portfolio .portfolio-wrap .portfolio-links {
-  opacity: 1;
-  left: 0;
-  right: 0;
-  bottom: -60px;
-  z-index: 3;
-  position: absolute;
-  transition: all ease-in-out 0.3s;
-  display: flex;
-  justify-content: center;
+
+.special .content h2::after {
+  content: "";
+  display: inline-block;
+  height: 0.6em;
+  vertical-align: bottom;
+  width: 3%;
+  margin-left: 20px;
+  border-top: 1px solid #f15f2a;
 }
-.portfolio .portfolio-wrap .portfolio-links a {
+
+.special .content h3 {
+  font-size: 60px;
+  line-height: 50px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
   color: #fff;
-  font-size: 28px;
+}
+
+.special .content img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+
+.special .content p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+.special .content .price {
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  color: #f15f2a;
+}
+
+/* Parallax css */
+.parallax-content {
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+.special-menu-tabs-master {
+background: #fff !important;
+position: relative;
+/* margin-top: 380px; */
+padding-bottom: 107px;
+}
+
+.special-menu-tabs {
+  margin-top: 90px;
+  max-width: 1380px;
+  margin: auto !important;
+}
+
+.special-menu-tabs .col-left {
+  background: #16191E;
+  padding-top: 45px;
+  color: #fff;
+  margin-top: -50px;
+  margin-right: 0px;
+  margin-bottom: 2px;
+}
+
+.special-menu-tabs .col-left p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
-  width: 50%;
 }
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+
+.special-menu-tabs .col-left h3 {
+  font-size: 35px;
+  line-height: 46px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
 }
-.portfolio .portfolio-wrap .portfolio-links a + a {
-  border-left: 1px solid #37b3ed;
+
+.menu-category {
+  padding-top: 70px;
+  padding-bottom: 125px;
 }
-.portfolio .portfolio-wrap:hover::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+
+.menu-category button {
+  display: block;
+  padding: 5px 10px;
+  background: transparent;
+  margin: auto;
+  border: 1px solid transparent !important;
+  transition: .3s all linear;
+  margin-top: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.menu-category button:hover,
+.menu-category button.active {
+  background: #f15f2a;
+  color: #fff;
+}
+
+.menu-list {
+  height: auto;
+}
+
+.menu-list .items {
+  position: relative;
+}
+
+.menu-list .items .inner-item {
+  margin: 6px 3px 2.5px 3px;
+  transition: 0.3s all linear;
+}
+
+.menu-list .items .inner-item img {
+  height: auto;
+  width: 100%;
+}
+
+.menu-list .items .items-overlay {
+  position: absolute;
+  bottom: 2px;
+  left: 3px;
+  width: calc(100% - 3px);
+  height: calc(100% - 2px);
+  opacity: 0;
+  transition: 0.3s all linear;
+  text-align: center;
+}
+
+.menu-list .items .items-overlay p {
+  padding: 0 10px;
+  /* padding-top: 100px; */
+  font-size: 14px;
+  color: #fff;
+}
+
+.menu-list .items .items-overlay p:nth-child(2) {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #f15f2a;
+}
+
+.menu-list .items .items-overlay span {
+  display: block;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.menu-list .items:hover .inner-item {
+  position: relative;
+  transform: scale(1.15);
+  z-index: 10;
+}
+
+.menu-list .items:hover .items-overlay {
+  transform: scale(1.15);
+  /* background: rgba(0, 0, 0, 0.8); */
+  padding-top: 35%;
   opacity: 1;
+  z-index: 11;
+  cursor: pointer;
 }
-.portfolio .portfolio-wrap:hover .portfolio-links {
-  opacity: 1;
-  bottom: 0;
+.our-chefs-body {
+  animation: 0.5s ease-in 0s 1 easeIn;
 }
+.chefs {
+	padding: 83px 0 100px;
+	position: relative;
+	background: #fff;
+}
+
+.chefs .content {
+    padding-bottom: 20px;
+}
+
+.chefs .content h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #f15f2a;
+    font-size: 45px;
+    line-height: 55px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.chefs .content h2::before {
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    vertical-align: bottom;
+    width: 5%;
+    margin-right: 15px;
+    border-top: 1px solid #f15f2a;
+}
+
+.chefs .content h2::after {
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    vertical-align: bottom;
+    width: 5%;
+    margin-left: 20px;
+    border-top: 1px solid #f15f2a;
+}
+
+.chefs .content h3 {
+    font-size: 60px;
+    line-height: 35px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.chefs .content img {
+    width: 100px;
+    padding-bottom: 20px;
+}
+
+.chefs-list {
+    height: auto;
+}
+
+.chefs-list .items {
+    position: relative;
+    transition: .3s all linear;
+}
+
+.chefs-list .items .inner-item {
+    margin: 0 0 3px 3px;
+}
+
+.chefs-list .items .inner-item img {
+    width: 100%;
+}
+
+.chefs-list .items-overlay {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    opacity: 0;
+    transition: 0.3s all linear;
+    text-align: center;
+}
+
+.chefs-list .items-overlay p {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #f15f2a;
+    padding-top: 100px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #fff3;
+    width: max-content;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.chefs-list .items-overlay span {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+
+.chefs-list .items-overlay ul {
+    width: max-content;
+    margin: auto;
+}
+
+.chefs-list .items-overlay ul li {
+    display: inline-block;
+    padding: 10px 20px 0 0;
+}
+
+.chefs-list .items-overlay ul li:last-child {
+    padding-right: 0;
+}
+
+.chefs-list .items-overlay ul li a {
+    transition: all 0.3s linear;
+    color: #fff !important;
+    font-size: 20px;
+}
+
+.chefs-list .items:hover {
+    transform: scale(1.15);
+    cursor: crosshair;
+    z-index: 99;
+}
+
+.chefs-list .items:hover .items-overlay {
+    background: rgba(0, 0, 0, .7);
+    opacity: 1;
+    padding-top: 20%;
+}
+
+.chefs-list .items-overlay ul a:hover {
+    color: #f15f2a !important;
+}
+
 
 /*--------------------------------------------------------------
 # Testimonials
