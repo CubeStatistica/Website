@@ -2470,6 +2470,7 @@ img{
   box-shadow: none;
   font-size: 14px;
   border-radius: 0;
+  margin-bottom: 20px;
 }
 
 .get-a-quote .php-email-form input:focus,
