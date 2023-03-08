@@ -3071,6 +3071,9 @@ footer.text-white {
 footer p {
     margin-bottom: 10px;
 }
+footer p:hover {
+  color: var(--primary);
+}
 footer p,
 footer li {
     font-size: 15px;
@@ -3150,32 +3153,19 @@ footer .widget_services ul li:hover {
     bottom: 0;
     left: 0;
 }
+.footer-sub-title{
+	/* margin-bottom: 10px; */
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 16px;
+    position: relative;
+}
 .footer_widget ul li a{
 	padding:5px 0;
 	display:block;
 	font-weight: 400;
-}
-/* Subscribe Form */
-.subscribe-form input{
-	background-color:rgba(0,0,0,0.2);
-	border:0;
-	height:45px;
-	padding:10px 20px;
-	margin-right:5px;
-	color:#fff;
-	font-size:15px;
-}
-.subscribe-form .btn{
-	border-radius: 0;
-}
-.subscribe-form input.radius-no{
-	border-radius:0 !important;
-}
-.subscribe-form .btn{
-	height:45px;
-}
-.subscribe-form .input-group-btn{
-	padding-left: 10px;
 }
 /* scroll top btn css */
 button.back-to-top {
