@@ -53,6 +53,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/assets.css">
   <link class="skin" rel="stylesheet" type="text/css" href="assets/css/color-1.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="/assets/js/form.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/layers.css">
@@ -551,32 +552,32 @@
           </div>
 
           <div class="col-lg-7 d-flex align-items-stretch get-a-quote" data-aos="fade-left">
-            <form action="forms/quote.php" method="post" class="php-email-form">
+            <form method="post" class="php-email-form">
               
               <div class="row gy-4">
   
                 <div class="col-md-6">
-                  <input type="text" name="departure" class="form-control" placeholder="First Name" required>
+                  <input type="text" name="FirstName" class="form-control" placeholder="First Name" required>
                 </div>
   
                 <div class="col-md-6">
-                  <input type="text" name="delivery" class="form-control" placeholder="Last Name" required>
+                  <input type="text" name="LastName" class="form-control" placeholder="Last Name" required>
                 </div>
   
                 <div class="col-md-6">
-                  <input type="text" name="weight" class="form-control" placeholder="Title" required>
+                  <input type="text" name="Title" class="form-control" placeholder="Title" required>
                 </div>
   
                 <div class="col-md-6">
-                  <input type="text" name="dimensions" class="form-control" placeholder="Company Name" required>
+                  <input type="text" name="CompanyName" class="form-control" placeholder="Company Name" required>
                 </div>
   
                 <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Subject" required>
+                  <input type="text" name="Subject" class="form-control" placeholder="Subject" required>
                 </div>
   
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Description" required></textarea>
+                  <textarea class="form-control" name="Description" rows="6" placeholder="Description" required></textarea>
                 </div>
   
                 <div class="col-md-12 text-center">
@@ -588,8 +589,8 @@
                     By clicking submit, you consent to allow Cube Statistica to store and process
                     the personal information submitted above to contact you regarding your request.
                   </p>
-                  <!-- <button type="submit">Get a quote</button> -->
-                  <a href="" class="get-started-btn scrollto">Submit</a>
+                  <button  class="get-started-btn scrollto" id="submit" type="submit">Submit</button>
+                  <!-- <a href="" class="get-started-btn scrollto">Submit</a> -->
                 </div>
   
               </div>
@@ -705,5 +706,13 @@
   <script src="assets/js/video.js"></script>
 
 </body>
+
+<script>
+  var btn = document.getElementById('submit');
+btn.addEventListener('click',function(e){
+    e.preventDefault()
+    alert("Hi");
+})
+</script>
 
 </html>
