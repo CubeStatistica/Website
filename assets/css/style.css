@@ -1831,6 +1831,9 @@ button:focus {
   font-size: 20px;
   color: #17a2b8;
 }
+.wrapper .box p{
+  font-size: 15px;
+}
 .wrapper .box .content{
   display: flex;
   flex-wrap: wrap;
