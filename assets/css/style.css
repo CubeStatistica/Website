@@ -3982,19 +3982,20 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .g-img img{
-  border-radius: 10px;
+  /* border-radius: 10px; */
   transition: 0.5s ease;
-  cursor: zoom-out;
+  cursor: pointer;
   width: 100%;
   object-fit: cover;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 .g-img img:hover{
-  opacity: 0.7;
+  /* opacity: 0.7; */
   transition: 0.5s ease;
   transform: scale(1.1);
 }
   #more {
-    display: none;
+    /* display: none; */
   }
 
   #myBtn{
@@ -4002,9 +4003,9 @@ section {
     border: 3px solid #6a040f;
     padding: 5px;
   }
-  .gallery_wrapper .row{  
-    margin-top: 10px; 
+  .portfolio .row{  
     margin-left: 0;
+    margin-bottom: 10px;
   }
 
 /*--------------------------------------------------------------
