@@ -26,6 +26,9 @@ function sendMail() {
                     document.getElementById("sent-message").innerHTML = "Your Message Sent Successfully";
                     alert("Your Message Sent Successfully");
                 }
+                else if (name.length < 4) {
+                    document.getElementById("error-message").innerHTML = "Name Should be more than 4 characters";
+                }
                 else {
                     document.getElementById("error-message").innerHTML = "Above fields are required";
                 }
