@@ -10,7 +10,19 @@
     gtag('js', new Date());
 
     gtag('config', 'G-B1JDJZPPZY');
+
   </script>
+  <script src="assets/js/form.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("AI-iWZtuZzQzCkRAP");
+    })();
+  </script>
+
+  </script>
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -55,6 +67,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/assets.css">
   <link class="skin" rel="stylesheet" type="text/css" href="assets/css/color-1.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="/assets/js/form.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="assets/vendors/revolution/css/layers.css">
@@ -341,7 +354,6 @@
     </section>
 
     <!-- End Services Section -->
-
 <!-- ======= Portfolio Section ======= -->
 <section class="portfolio bg-light" id="portfolio" data-aos="fade-up">
   <div class="container">
@@ -387,6 +399,27 @@
         </div>
         <div class="row">
 
+        </div>
+      </div>
+    </section>
+
+    <!-- End Portfolio Section -->
+
+    <!-- Popular Courses -->
+
+    <section class="bg-light" id="course" data-aos="fade-up">
+      <div class="container">
+        <div class="row">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-title">
+                <h2>Our Courses</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
           <div class="col-md-6 col-lg-4 col-sm-6 m-b30" data-aos="fade-right">
             <div class="cours-bx">
               <div class="action-box">
@@ -416,6 +449,35 @@
             </div>
           </div>
 
+
+          <div class="col-md-6 col-lg-4 col-sm-6 m-b30" data-aos="fade-right">
+            <div class="cours-bx">
+              <div class="action-box">
+                <img src="assets/img/courses/ML_and_DL_course.jpeg" alt="">
+                <a href="course.html" class="btn">Read More</a>
+              </div>
+              <div class="info-bx text-center">
+                <h5><a href="#">Professional Training Course in Machine Learning and Data Science</a></h5>
+                <span>Programming</span>
+              </div>
+              <div class="cours-more-info">
+                <div class="review">
+                  <span>6 Review</span>
+                  <ul class="cours-star">
+                    <li class="active"><i class="bi bi-star-fill"></i></li>
+                    <li class="active"><i class="bi bi-star-fill"></i></li>
+                    <li class="active"><i class="bi bi-star-fill"></i></li>
+                    <li class="active"><i class="bi bi-star-fill"></i></li>
+                    <li class="active"><i class="bi bi-star-fill"></i></li>
+                  </ul>
+                </div>
+                <div class="price">
+                  <del>$100</del>
+                  <h5>$40</h5>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="col-md-6 col-lg-4 col-sm-6 m-b30" data-aos="fade-left">
             <div class="cours-bx" style="height: 26rem;">
@@ -546,49 +608,48 @@
           </div>
 
           <div class="col-lg-7 d-flex align-items-stretch get-a-quote" data-aos="fade-left">
-            <form action="forms/quote.php" method="post" class="php-email-form">
+            <div class="php-email-form">
 
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="departure" class="form-control" placeholder="First Name" required>
+                  <input type="text" name="Title" id="title" class="form-control" placeholder="Title" required>
                 </div>
 
                 <div class="col-md-6">
-                  <input type="text" name="delivery" class="form-control" placeholder="Last Name" required>
+                  <input type="text" name="Name" id="name" class="form-control" placeholder="Name" required>
                 </div>
+                <div class="col-md-12">
+                  <input type="text" name="CompanyName" id="company" class="form-control" placeholder="Company Name"
+                    required>
 
-                <div class="col-md-6">
-                  <input type="text" name="weight" class="form-control" placeholder="Title" required>
-                </div>
-
-                <div class="col-md-6">
-                  <input type="text" name="dimensions" class="form-control" placeholder="Company Name" required>
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Subject" required>
+                  <input type="text" name="Subject" id="subject" class="form-control" placeholder="Subject" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Description" required></textarea>
+                  <textarea class="form-control" name="Message" id="message" rows="6" placeholder="Message"
+                    required></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+                  <div id="error-message" class="error-message"></div>
+                  <div id="sent-message" class="sent-message">
+                  </div>
 
                   <p>Cube Statistica is committed to protecting and respecting your privacy. </br></br>
                     By clicking submit, you consent to allow Cube Statistica to store and process
                     the personal information submitted above to contact you regarding your request.
                   </p>
-                  <!-- <button type="submit">Get a quote</button> -->
-                  <a href="" class="get-started-btn scrollto">Submit</a>
+                  <button class="get-started-btn scrollto" id="submit" onclick="sendMail()">Submit</button>
+                  <!-- <a href="" class="get-started-btn scrollto">Submit</a> -->
                 </div>
 
               </div>
-            </form>
+            </div>
 
           </div>
     </section>
