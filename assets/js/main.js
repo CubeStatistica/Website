@@ -1,11 +1,11 @@
-(function() {
+(function () {
   "use strict";
 
   /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
-    el = el.trim()
+    // el = el.trim()
     if (all) {
       return [...document.querySelectorAll(el)]
     } else {
@@ -107,7 +107,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -116,7 +116,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -126,7 +126,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -200,9 +200,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -210,7 +210,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -325,103 +325,92 @@ window.onclick = (e) => {
 
 var preloader = document.getElementById('loading');
 
-function loader(){
+function loader() {
   preloader.style.display = 'none';
 }
 $(document).ready(function () {
-// Portfolio Slider
-$('#projects-slider').owlCarousel({
-  loop: true,
-  nav: false,
-  items: 2,
-  dots: true,
-  smartSpeed: 600,
-  center: true,
-  autoplay: true,
-  autoplayTimeout: 4000,
-  responsive: {
+  // Portfolio Slider
+  $('#projects-slider').owlCarousel({
+    loop: true,
+    nav: false,
+    items: 2,
+    dots: true,
+    smartSpeed: 600,
+    center: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    responsive: {
       0: {
-          items: 1
+        items: 1
       },
       768: {
-          items: 2,
-          margin: 8,
+        items: 2,
+        margin: 8,
       }
-  }
-})
+    }
+  })
 });
 
-function initHeroSlider()
-	{
-		if($('.hero_slider').length)
-		{
-			var owl = $('.hero_slider');
+function initHeroSlider() {
+  if ($('.hero_slider').length) {
+    var owl = $('.hero_slider');
 
-			owl.owlCarousel(
-			{
-				items:1,
-				loop:true,
-				smartSpeed:800,
-				autoplay:true,
-				nav:false,
-				dots:false
-			});
+    owl.owlCarousel(
+      {
+        items: 1,
+        loop: true,
+        smartSpeed: 800,
+        autoplay: true,
+        nav: false,
+        dots: false
+      });
 
-			// add animate.css class(es) to the elements to be animated
-			function setAnimation ( _elem, _InOut )
-			{
-				// Store all animationend event name in a string.
-				// cf animate.css documentation
-				var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    // add animate.css class(es) to the elements to be animated
+    function setAnimation(_elem, _InOut) {
+      // Store all animationend event name in a string.
+      // cf animate.css documentation
+      var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-				_elem.each ( function ()
-				{
-					var $elem = $(this);
-					var $animationType = 'animated ' + $elem.data( 'animation-' + _InOut );
+      _elem.each(function () {
+        var $elem = $(this);
+        var $animationType = 'animated ' + $elem.data('animation-' + _InOut);
 
-					$elem.addClass($animationType).one(animationEndEvent, function ()
-					{
-						$elem.removeClass($animationType); // remove animate.css Class at the end of the animations
-					});
-				});
-			}
+        $elem.addClass($animationType).one(animationEndEvent, function () {
+          $elem.removeClass($animationType); // remove animate.css Class at the end of the animations
+        });
+      });
+    }
 
-			// Fired before current slide change
-			owl.on('change.owl.carousel', function(event)
-			{
-				var $currentItem = $('.owl-item', owl).eq(event.item.index);
-				var $elemsToanim = $currentItem.find("[data-animation-out]");
-				setAnimation ($elemsToanim, 'out');
-			});
+    // Fired before current slide change
+    owl.on('change.owl.carousel', function (event) {
+      var $currentItem = $('.owl-item', owl).eq(event.item.index);
+      var $elemsToanim = $currentItem.find("[data-animation-out]");
+      setAnimation($elemsToanim, 'out');
+    });
 
-			// Fired after current slide has been changed
-			owl.on('changed.owl.carousel', function(event)
-			{
-				var $currentItem = $('.owl-item', owl).eq(event.item.index);
-				var $elemsToanim = $currentItem.find("[data-animation-in]");
-				setAnimation ($elemsToanim, 'in');
-			})
+    // Fired after current slide has been changed
+    owl.on('changed.owl.carousel', function (event) {
+      var $currentItem = $('.owl-item', owl).eq(event.item.index);
+      var $elemsToanim = $currentItem.find("[data-animation-in]");
+      setAnimation($elemsToanim, 'in');
+    })
 
-			// Handle Custom Navigation
-			if($('.hero_slider_left').length)
-			{
-				var owlPrev = $('.hero_slider_left');
-				owlPrev.on('click', function()
-				{
-					owl.trigger('prev.owl.carousel');
-				});
-			}
+    // Handle Custom Navigation
+    if ($('.hero_slider_left').length) {
+      var owlPrev = $('.hero_slider_left');
+      owlPrev.on('click', function () {
+        owl.trigger('prev.owl.carousel');
+      });
+    }
 
-			if($('.hero_slider_right').length)
-			{
-				var owlNext = $('.hero_slider_right');
-				owlNext.on('click', function()
-				{
-					owl.trigger('next.owl.carousel');
-				});
-			}
-		}	
-	}
+    if ($('.hero_slider_right').length) {
+      var owlNext = $('.hero_slider_right');
+      owlNext.on('click', function () {
+        owl.trigger('next.owl.carousel');
+      });
+    }
+  }
+}
 
 
 
