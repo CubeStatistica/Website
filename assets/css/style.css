@@ -2907,10 +2907,6 @@ section {
   transform: scale(1.1);
 }
 
-#more {
-  /* display: none; */
-}
-
 #myBtn {
   cursor: pointer;
   border: 3px solid #6a040f;
