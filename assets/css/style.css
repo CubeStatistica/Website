@@ -3580,11 +3580,13 @@ section {
 
 .course-features li i {
   margin-right: 10px;
+  /* padding-right: 100px; */
   font-size: 16px;
   color: var(--primary);
 }
 
 .course-features li .value {
+
   width: 100%;
 }
 
