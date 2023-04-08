@@ -858,7 +858,7 @@ section {
 .skill-bars {
   padding: 30px 30px;
   width: 843px;
-  height: 400px;
+  height: max-content;
   background: #fff;
   /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2); */
   border-radius: 10px;
@@ -949,20 +949,32 @@ section {
   }
 }
 
-.html span {
-  width: 84%;
+.stcons span {
+  width: 95%;
 }
 
-.css span {
-  width: 92%;
+.ml span {
+  width: 95%;
 }
 
-.JavaScript span {
-  width: 60%;
+.dash span {
+  width: 90%;
 }
 
-.react span {
-  width: 80%;
+.promanager span {
+  width: 85%;
+}
+
+.comm span {
+  width: 100%;
+}
+
+.teach span {
+  width: 100%;
+}
+
+.coach span {
+  width: 100%;
 }
 
 @keyframes showText2 {
@@ -971,20 +983,32 @@ section {
   }
 }
 
-.html span::after {
-  content: "84%";
+.stcons span::after {
+  content: "95%";
 }
 
-.css span::after {
-  content: "92%";
+.ml span::after {
+  content: "95%";
 }
 
-.JavaScript span::after {
-  content: "60%";
+.dash span::after {
+  content: "90%";
 }
 
-.react span::after {
-  content: "80%";
+.promanager span::after {
+  content: "85%";
+}
+
+.comm span::after {
+  content: "100%";
+}
+
+.teach span::after {
+  content: "100%";
+}
+
+.coach span::after {
+  content: "100%";
 }
 
 /* Media Query */
