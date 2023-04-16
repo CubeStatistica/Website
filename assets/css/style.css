@@ -254,6 +254,10 @@ ol {
   font-size: 12px;
 }
 
+.dropdownactive {
+  color: var(--brand);
+}
+
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
