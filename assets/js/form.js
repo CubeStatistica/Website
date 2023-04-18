@@ -49,7 +49,26 @@ function shareOnFacebook() {
     window.open(navUrl, '_blank');
 }
 
+function shareOnTwitter() {
+    const navUrl =
+        'https://twitter.com/intent/tweet?text=' +
+        'https://cubestatistica.com/blog-1.html';
+    window.open(navUrl, '_blank');
+}
 
+function shareOnLinkedin() {
+    const navUrl =
+        'https://www.linkedin.com/shareArticle?mini=true&url=' +
+        'https://cubestatistica.com/blog-1.html';
+    window.open(navUrl, '_blank');
+}
+
+function shareOnWhatsapp() {
+    const navUrl =
+        'https://api.whatsapp.com/send/?text=' +
+        'https://cubestatistica.com/blog-1.html';
+    window.open(navUrl, '_blank');
+}
 
 
 
