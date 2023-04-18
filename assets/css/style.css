@@ -1883,6 +1883,11 @@ img {
 }
 
 /* Blog Share */
+#fb {
+  background: transparent;
+  border: none;
+}
+
 .blog-share {
   position: relative
 }
