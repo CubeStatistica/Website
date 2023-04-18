@@ -75,7 +75,6 @@ ol {
   bottom: 15px;
   z-index: 996;
   background: var(--primary);
-  ;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -103,73 +102,62 @@ ol {
 # Header
 --------------------------------------------------------------*/
 #header {
-  top: 50px;
-  height: 70px;
-  z-index: 997;
+  background: #fff;
   transition: all 0.5s;
-  padding: 10px 0;
-  /* background: wheat; */
-  /* background: rgba(26, 24, 22, 0.85); */
-  color: var(--orange);
-}
-
-#header.header-transparent {
-  background: transparent;
+  z-index: 997;
+  padding: 20px 0;
 }
 
 #header.header-scrolled {
-  top: 0;
-  background: rgba(26, 24, 22, 0.85);
+  padding: 12px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#header .logo h1 {
-  font-size: 28px;
+#header .logo {
+  font-size: 30px;
   margin: 0;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: 3px;
+  padding: 0;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
-#header .logo h1 a,
-#header .logo h1 a:hover {
-  color: #000;
-  text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#header .logo a {
+  color: #111111;
+}
+
+#header .logo a span {
+  color: #e03a3c;
 }
 
 #header .logo img {
-  padding: 0;
-  margin: 0;
   max-height: 40px;
 }
 
-
 /*--------------------------------------------------------------
-# Book a table button Menu
+# Get Startet Button
 --------------------------------------------------------------*/
-.book-a-table-btn {
-  background: var(--brand);
+.get-started-btn {
+  margin-left: 30px;
+  background: #e03a3c;
   color: #fff;
-  border-radius: 50px;
-  margin: 0 0 0 20px;
-  padding: 10px 25px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: 0.3s;
+  border-radius: 4px;
+  padding: 8px 25px;
   white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
 }
 
-.book-a-table-btn:hover {
-  background: var(--primary);
+.get-started-btn:hover {
+  background: var(--brand);
   color: #fff;
 }
 
 @media (max-width: 992px) {
-  .book-a-table-btn {
+  .get-started-btn {
     margin: 0 15px 0 0;
-    padding: 8px 20px;
-    letter-spacing: 1px;
+    padding: 6px 18px;
   }
 }
 
@@ -181,7 +169,6 @@ ol {
 */
 .navbar {
   padding: 0;
-
 }
 
 .navbar ul {
@@ -189,22 +176,27 @@ ol {
   padding: 0;
   display: flex;
   list-style: none;
-  align-items: center;
+  align-items: right;
 }
 
 .navbar li {
   position: relative;
 }
 
+#navMenu {
+  font-weight: bold;
+}
+
 .navbar a,
 .navbar a:focus {
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
-  padding: 10px 0 10px 24px;
+  padding: 10px 0 10px 30px;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
-  font-weight: 500;
-  color: white;
+  font-weight: 600;
+  color: #111111;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -220,13 +212,13 @@ ol {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: var(--brand);
+  color: var(--primary);
 }
 
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 24px;
+  left: 30px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -236,7 +228,6 @@ ol {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-  border-radius: 4px;
 }
 
 .navbar .dropdown ul li {
@@ -246,22 +237,16 @@ ol {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
-  font-weight: 400;
-  color: #433f39;
 }
 
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
 
-.dropdownactive {
-  color: var(--brand);
-}
-
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: var(--brand);
+  color: var(--primary);
 }
 
 .navbar .dropdown:hover>ul {
@@ -297,12 +282,16 @@ ol {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #111111;
   font-size: 28px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -322,9 +311,9 @@ ol {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(39, 37, 34, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
-  z-index: 0;
+  z-index: 999;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -341,7 +330,6 @@ ol {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  border-radius: 8px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
@@ -351,13 +339,13 @@ ol {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #433f39;
+  color: #111111;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #ffb03b;
+  color: var(--primary);
 }
 
 .navbar-mobile .getstarted,
@@ -392,11 +380,41 @@ ol {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #ffb03b;
+  color: var(--primary);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
+}
+
+
+/*--------------------------------------------------------------
+# Book a table button Menu
+--------------------------------------------------------------*/
+.book-a-table-btn {
+  background: var(--brand);
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 0 0 20px;
+  padding: 10px 25px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.book-a-table-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .book-a-table-btn {
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+  }
 }
 
 
@@ -2471,7 +2489,7 @@ h6 {
 }
 
 .get-started-btn:hover {
-  background: #111111;
+  background: var(--brand);
   color: #fff;
 }
 
