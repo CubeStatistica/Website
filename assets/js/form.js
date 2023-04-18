@@ -42,6 +42,15 @@ function sendMail() {
 }
 
 
+// Facebook Sharer Api: -  "https://www.facebook.com/sharer/sharer.php?u=";
+
+function shareOnFacebook() {
+    const navUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + 'https://cubestatistica.com/blog-1.html';
+    window.open(navUrl, '_blank');
+}
+
+
+
 
 
 
