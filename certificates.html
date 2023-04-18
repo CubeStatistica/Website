@@ -70,41 +70,39 @@
 
 
   <!-- ======= Header ======= -->
-  <header id="header" style="background: white;" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <div class="logo me-auto">
-        <h1><a href="index.html">CUBE STATISTICA</a></h1>
-      </div>
-
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">CUBESTATISTICA<span></span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html"><span>Home</span></a></li>
-          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.html" id="navMenu">Home</a></li>
+          <li class="dropdown"><a href="#" class="nav-link scrollto"><span>About</span> <i
+                class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="index.html#about" class="scrollto">About Us</a></li>
-              <li><a href="index.html#founders" class="scrollto">Founder</a></li>
+              <li><a class="nav-link scrollto" href="index.html#about">About Us</a></li>
+              <li><a class="nav-link scrollto" href="index.html#founders">Founder</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="index.html#services"><span>Services</span></a></li>
-          <li><a class="nav-link scrollto " href="index.html#portfolio"><span>Portfolio</span></a></li>
+          <li><a class="nav-link scrollto" href="index.html#services" id="navMenu">Services</a></li>
+          <li><a class="nav-link scrollto " href="index.html#portfolio" id="navMenu">Portfolio</a></li>
           <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>Courses</span> <i
                 class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="course-card.html">Our Courses</a></li>
-              <li><a href="certificates.html">Certificate</a></li>
-              <li><a href="Course-Reviews.html">Course Reviews</a></li>
+              <li><a class="nav-link scrollto" href="course-card.html">Our Courses</a></li>
+              <li><a class="nav-link scrollto" href="certificates.html">Certificate</a></li>
+              <li><a class="nav-link scrollto" href="Course-Reviews.html">Course Reviews</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="blog.html"><span>Blogs</span></a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact"><span>Contact</span></a></li>
+          <li><a href="blog.html" id="navMenu">Blogs</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact" id="navMenu">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="index.html#contact" class="book-a-table-btn scrollto">Get Started</a>
-
+      <a href="index.html#contact" class="get-started-btn scrollto">Get Started</a>
     </div>
   </header>
   <!-- End Header -->
