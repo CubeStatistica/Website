@@ -75,7 +75,6 @@ ol {
   bottom: 15px;
   z-index: 996;
   background: var(--primary);
-  ;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -151,7 +150,7 @@ ol {
 }
 
 .get-started-btn:hover {
-  background: #111111;
+  background: var(--brand);
   color: #fff;
 }
 
@@ -177,17 +176,21 @@ ol {
   padding: 0;
   display: flex;
   list-style: none;
-  align-items: center;
+  align-items: right;
 }
 
 .navbar li {
   position: relative;
 }
 
+#navMenu {
+  font-weight: bold;
+}
+
 .navbar a,
 .navbar a:focus {
   display: flex;
-  align-items: center;
+  align-items: right;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Raleway", sans-serif;
@@ -209,7 +212,7 @@ ol {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #e03a3c;
+  color: var(--primary);
 }
 
 .navbar .dropdown ul {
@@ -243,7 +246,7 @@ ol {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #e03a3c;
+  color: var(--primary);
 }
 
 .navbar .dropdown:hover>ul {
@@ -342,7 +345,7 @@ ol {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #e03a3c;
+  color: var(--primary);
 }
 
 .navbar-mobile .getstarted,
@@ -377,7 +380,7 @@ ol {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #e03a3c;
+  color: var(--primary);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -2486,7 +2489,7 @@ h6 {
 }
 
 .get-started-btn:hover {
-  background: #111111;
+  background: var(--brand);
   color: #fff;
 }
 
