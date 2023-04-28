@@ -607,15 +607,17 @@ ol {
 }
 
 .btn-brand {
-  border-color: var(--brand);
-  background-color: var(--brand);
+  padding: 8px 26px;
+  border: solid;
+  border-color: #fff;
+  background-color: transparent;
   color: #fff;
 }
 
 .btn-brand:hover {
-  background-color: #fff;
-  border-color: #fff;
-  color: #000;
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
 }
 
 @media (max-width: 1040px) {
