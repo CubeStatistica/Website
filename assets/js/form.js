@@ -5,13 +5,23 @@ function sendMail() {
     var position = document.getElementById("position").value;
     var company = document.getElementById("company").value;
     var message = document.getElementById("message").value;
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     // alert("name = " + name);
     if (firstname == "" && lastname == "" && email == "" && position == "" && company == "" && message == "") {
         document.getElementById("error-message").innerHTML = "Above fields are required";
         // alert("Fields are required");
     }
-    else if (firstname != "" && lastname != "" && email != "" && position != "" && company != "" && message != "") {
+    else if (!(email.match(mailformat))) {
+        document.getElementById("error-message").innerHTML = "Kindly enter valid email address";
+        // alert("Fields are required");
+    }
+    else if (firstname != ""
+        && lastname != ""
+        && email != "" && email.match(mailformat)
+        && position != ""
+        && company != ""
+        && message != "") {
         var params = {
             firstname: document.getElementById("firstname").value,
             lastname: document.getElementById("lastname").value,
